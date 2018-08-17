@@ -1,0 +1,43 @@
+body{
+		background:#f2f2f2;
+
+}
+.sign{
+
+ /*#99ffff*/
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left:10px;
+	border-radius:5px;
+	box-shadow: 0 0  5px rgb(0,0,0,0.5);
+}
+
+input
+{	
+	width: 90%;
+	border-radius:3px;
+	border:1px solid rgb(0,0,0,0.3);
+	padding-right: 10px;
+}
+
+.container{
+	margin-top:40px;
+}
+
+.form-content{
+	margin-left: 25px;
+
+
+}
+
+button:hover{
+	background-color:#cffffb !important;
+}
+
+input:hover{
+	border: 1px inset #22c7b8;
+}
+
+input:focus{
+	border: 1px inset #22c7b8;
+}
