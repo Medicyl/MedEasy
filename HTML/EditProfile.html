@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -118,9 +117,15 @@
 // Matching alphabets,character size,integer and providing useful messages
 	$(".alpha-only").on("input", function(){
 	  var regexp = /[^a-zA-Z]/g;
-	  if($(this).val().match(regexp) || $(this).val().length > 25){
+	  if($(this).val().match(regexp) || $(this).val().length > 25)
+	  {
+	  	console.log($(this).val().match(regexp));
+	  	console.log($(this).val());
 	    $(this).val( $(this).val().replace(regexp,'') );
-	    if($(this).val().length > 25){$(this).val($(this).val().substring(0, 25)); }
+	    if($(this).val().length > 25)
+	    {
+	    	$(this).val($(this).val().substring(0, 25)); 
+	    }
 	    $('#message1').html('No Integers,Spaces allowed & length should not be greater than 25 character').css('color', 'red');
 	  }
 	  else{

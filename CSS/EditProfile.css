@@ -1,12 +1,8 @@
 body{
-    background-image: url("https://d345cba086ha3o.cloudfront.net/wp-content/uploads/2016/11/6779074382_131a68db63_b.jpg") !important;
-    background-size: 100%;
+ background:rgba(74, 189, 172,1) !important; 
+ background-size: 100%;
 }
-.filtr{
-    width: 100%;
-    height: auto ;
-    background:rgba(74, 189, 172,0.5) !important; 
-}
+
 h2{
     color: #fff !important;
 }
