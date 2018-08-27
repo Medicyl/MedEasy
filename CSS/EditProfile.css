@@ -1,6 +1,5 @@
 body{
  background:rgba(74, 189, 172,1) !important; 
- background-size: 100%;
 }
 
 h2{
@@ -20,6 +19,10 @@ h2{
     background-color: #fc4a1a;
     color: #fff;
 }
+.but1:hover {
+  background-color: #fc1919;
+}
+
 img {
 	display: block;
     margin-left: auto;

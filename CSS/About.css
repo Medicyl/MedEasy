@@ -4,13 +4,8 @@
 }
 
 body {
-  background: url("https://d345cba086ha3o.cloudfront.net/wp-content/uploads/2016/11/6779074382_131a68db63_b.jpg");
-  background-color: #212121;
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-
+ background:rgba(74, 189, 172,1) !important; 
+ text-align: center;
 }
 
 h1 {
@@ -85,7 +80,6 @@ p {
 .square:hover .fa-youtube {
   color: rgba(229, 45, 39, 1)
 }
-<<<<<<< HEAD
 .video{
   margin: 20px;
 }
