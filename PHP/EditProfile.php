@@ -1,3 +1,7 @@
+<?php
+ session_start();
+ echo $_SESSION['fname'];
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,7 +30,7 @@
 				  <span id="message1"></span>
 				  <div class="form-group">
 				    <label for="fname">First Name</label>
-				    <input type="text" id="fname" class="form-control alpha-only" placeholder="Enter First Name"	required="True">
+				    <input type="text" id="fname" class="form-control alpha-only" placeholder="Enter First Name" required="True" value="<?php $_SESSION['fname'] ?>">
 				  </div>
 				  <div class="form-group">
 				    <label for="lname">Last Name</label>

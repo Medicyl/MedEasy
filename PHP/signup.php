@@ -1,24 +1,14 @@
 <?php 
+	include_once "connection.php";
 	if(isset($_POST['submit']))
 	{
-		$servername = "localhost";
-		$username = "root";
-		$password = "";
-		$dbname="medeasy";
-		$conn = new mysqli($servername, $username, $password, $dbname);
-
-		if ($conn->connect_error) 
-		{
-	    	die("Connection failed: " . $conn->connect_error);
-		}
-
 		$fname=mysqli_real_escape_string($conn,$_POST['ufname']);
 		$lname=mysqli_real_escape_string($conn,$_POST['ulname']);
 		$email=mysqli_real_escape_string($conn,$_POST['umail']);
 		$contact=mysqli_real_escape_string($conn,$_POST['uphone']);
 		$bdate=mysqli_real_escape_string($conn,$_POST['ubdate']);
 		$password=mysqli_real_escape_string($conn,$_POST['password']);
-		$hashpwd=password_hash($password,PASSWORD_DEFAULT);
+		$hashpwd=md5($password);
 		$sql=mysqli_query($conn,"SELECT u_mail FROM users where u_mail='".$email."'");
 		$result = mysqli_fetch_array($sql);
 		echo $result;
@@ -31,7 +21,7 @@
 			}			
 		}
 		else{
-			echo "Username Already taken";
+			echo "Email id Already exists.";
 		}
 
 	}

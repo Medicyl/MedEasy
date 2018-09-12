@@ -23,7 +23,7 @@
           <p class="medeasy-name" align="center">MEDEASY</p>
           <div class="form-content">
             <span style="font-weight: 500;font-size: 24px;">Sign In</span>
-            <form class="form-group">
+            <form class="form-group" action="../PHP/login.php" method="POST">
               <span style="font-weight: 500;">Email ID </span>
               <br>
               <input type="email" name="mail" required="True"><br><br>
@@ -33,7 +33,7 @@
               <p class="rememberme">
                 <input type="checkbox" name="remember me" value="remember me">Remember me <br><br>
               </p>
-              <button align="center"type="Submit" class="sign-btn">Sign in</button>
+              <input align="center" type="submit" name="submit" value="Sign in" class="sign-btn">
             </form><br>
             <a href="#" style="text-decoration: none; padding-bottom: 20px">Forgot Password ? </a>
           </div>
