@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="signin.css">
+  <link rel="stylesheet" type="text/css" href="../CSS/signin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Create MedEasy Account</title>
@@ -22,7 +22,7 @@
           <p align="center">MedEasy.in</p>
           <div class="form-content">
             <span style="font-weight: 500;font-size: 24px;">Create Your Account</span>
-            <form class="form-group">
+            <form class="form-group" method="POST" action="../PHP/signup.php">
               <span style="font-weight: 500;">First Name</span>
               <br>
               <input type="text" name="ufname" required><br><br>
@@ -41,7 +41,7 @@
               <span style="font-weight: 500;">Password</span>
               <br> 
               <input type="Password" name="password" required><br><br>
-              <button align="center"type="Submit" style="background:transparent;border: 1px solid #4abdac; color:#0056b3;cursor: pointer; border-radius: 3px; width: 90%; text-align: center;">Continue to MedEasy</button>
+              <input align="center" value="submit" type="submit" name="submit" style="background:transparent;border: 1px solid #4abdac; color:#0056b3;cursor: pointer; border-radius: 3px; width: 90%; text-align: center;"></input>
             </form><br>
             
           </div>
