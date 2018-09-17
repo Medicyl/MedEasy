@@ -8,7 +8,7 @@
 		$contact=mysqli_real_escape_string($conn,$_POST['uphone']);
 		$bdate=mysqli_real_escape_string($conn,$_POST['ubdate']);
 		$password=mysqli_real_escape_string($conn,$_POST['password']);
-		$hashpwd=md5($password);
+		$hashpwd=password_hash($password,PASSWORD_DEFAULT,['cost' => 15]);
 		$sql=mysqli_query($conn,"SELECT u_mail FROM users where u_mail='".$email."'");
 		$result = mysqli_fetch_array($sql);
 		echo $result;
