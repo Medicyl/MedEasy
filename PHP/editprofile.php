@@ -1,8 +1,11 @@
 <?php 
-	
 	if(isset($_POST['submit']))
 	{
-
+		$servername = "localhost";
+		$username = "root";
+		$password = "";
+		$dbname="medeasy";
+		$conn = new mysqli($servername, $username, $password, $dbname);
 
 		if ($conn->connect_error) 
 		{
