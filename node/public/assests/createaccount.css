@@ -1,0 +1,39 @@
+body{
+    
+}
+.sign{
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 2px outset #22c7b8;
+	padding-left:10px;
+	border-radius:5px;
+}
+
+input
+{	
+	width: 90%;
+	border-radius:3px;
+	border:10px solid rgb(0,0,0,0.1);
+	padding-right: 10px;
+}
+
+.container{
+	margin-top:40px;
+}
+
+.form-content{
+	margin-left: 25px;
+}
+
+button:hover{
+	background-color:#22c7b8;
+}
+
+input:hover{
+	border: 1px inset #22c7b8;
+}
+
+input:focus{
+	border: 1px inset #22c7b8;
+}

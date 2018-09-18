@@ -1,0 +1,78 @@
+body{
+		background:#4abdac;
+
+
+}
+.sign{
+
+ /*#99ffff*/
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-left:10px;
+	border-radius:5px;
+	box-shadow: 0 0  5px rgb(0,0,0,0.5);
+	background-color: white;
+}
+
+.medeasy-name{
+	font-family: 'Audiowide';
+	font-size: 34px;
+	color: #fc4a1a;
+}
+
+input
+{	
+	width: 90%;
+	border-radius:3px;
+	border:1px solid rgb(0,0,0,0.3);
+	padding-right: 10px;
+}
+
+.rememberme{
+	display: inline;
+}
+
+.container{
+	margin-top:40px;
+}
+
+.form-content{
+	margin-left: 25px;
+
+
+}
+
+.create-btn{
+	font-weight: 400;
+	height: 30px;
+	background:#fc4a1a;color:white;cursor: pointer; border-radius: 3px; width: 100%;text-align: center;border:none;
+}
+
+.sign-btn{
+	height: 30px;
+	font-weight: 400;
+	background:#fc4a1a;border: 1px solid #4abdac; color:#fff;cursor: pointer; border-radius: 3px; width: 90%; text-align: center; text-decoration: none;border:none;
+}
+.sign-btn:hover{
+	background-color:#fff !important;
+	border:1px solid #fc4a1a;	
+	color:#fc4a1a;
+	transition:all linear 0.1s; 
+
+}
+.create-btn:hover
+{
+	background-color:#fff !important;
+	border:1px solid #fc4a1a;	
+	color:#fc4a1a;
+	transition:all linear 0.1s; 
+
+}
+
+input:hover{
+	border: 1px inset #22c7b8;
+}
+
+input:focus{
+	border: 1px inset #22c7b8;
+}
