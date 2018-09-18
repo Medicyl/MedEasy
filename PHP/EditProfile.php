@@ -1,6 +1,5 @@
 <?php
  session_start();
- echo $_SESSION['fname'];
  ?>
 <!DOCTYPE html>
 <html>
@@ -23,34 +22,34 @@
 			</div>		
 			<div class="col-md-5 col-sm-10">
 				
-				<form class="form">
+				<form class="form" >
 				  <div class="form-group">
 				  	<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" >
 				  </div>
 				  <span id="message1"></span>
 				  <div class="form-group">
 				    <label for="fname">First Name</label>
-				    <input type="text" id="fname" class="form-control alpha-only" placeholder="Enter First Name" required="True" value="<?php $_SESSION['fname'] ?>">
+				    <input type="text" id="fname" class="form-control alpha-only" placeholder="Enter First Name" required="True" value="<?php echo $_SESSION['fname']; ?>">
 				  </div>
 				  <div class="form-group">
 				    <label for="lname">Last Name</label>
-				    <input type="text" id="lname" class="form-control alpha-only" placeholder="Enter Last Name"	required="True">
+				    <input type="text" id="lname" class="form-control alpha-only" placeholder="Enter Last Name"	required="True" value="<?php echo $_SESSION['lname']; ?>">
 				  </div>
 				  <div class="form-group">
 				    <label for="dob">Date of Birth</label>
-				    <input type="Date" id="datefield" min='1950-01-01' max='2018-01-01' class="form-control" >
+				    <input type="Date" id="datefield" min='1950-01-01' max='2018-01-01' class="form-control" value="<?php echo $_SESSION['birth']; ?>">
 				  </div>
 				  <div class="form-group">
 				    <label for="gender">Gender</label>
 				    <select class="form-control">
-				    	<option>Male</option>
-				    	<option>Female</option>
-				    	<option>Other</option>
+				    	<option name="Male">Male</option>
+				    	<option name="Female">Female</option>
+				    	<option name="Other">Other</option>
 				    </select>
 				  </div>
 				  <div class="form-group">
 				    <label for="Email">Email address</label>
-				    <input type="email" class="form-control" id="email" placeholder="Enter email"	required="True">
+				    <input type="email" class="form-control" id="email" placeholder="Enter email"	required="True" value="<?php echo $_SESSION['mail']; ?>">
 				  </div>
 				  <div class="but">
 				  	<button type="submit" class="btn but1" >Submit</button>
@@ -77,7 +76,7 @@
 	      	<form class="form">
 			  <div class="form-group">
 			    <label for="OldPassword">Old Password</label>
-			    <input type="password" class="form-control" placeholder="Old Password"	required="True">
+			    <input type="password" class="form-control" placeholder="Old Password"	required="True" >
 			  </div>
 			  <div class="form-group">
 			    <label for="NewPassword">New Password</label>
