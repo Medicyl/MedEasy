@@ -1,5 +1,6 @@
 <?php 
 	include_once "connection.php";
+	session_start();
 	if(isset($_POST['submit']))
 	{
 		$email=mysqli_real_escape_string($conn,$_POST['mail']);
@@ -23,11 +24,12 @@
 							$_SESSION['mail']=$result['u_mail'];
 						    $_SESSION['phone']=$result['u_phone'];
 							$_SESSION['birth']=$result['u_birth'];
+							$_SESSION['logout'] = 1;
 							header("location:../PHP/index.php?signin=success");
 				}
-				// elseif($hashedpwd==false){
-				// 	header("location:../HTML/signin.html?login=$a");
-				// }
+				else{
+					header("location:../HTML/signin.html?login=invalid");
+				}
 			}
 			else{
 				header("location:../HTML/signin.html?login=invalid");
