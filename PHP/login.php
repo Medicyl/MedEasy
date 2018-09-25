@@ -12,6 +12,8 @@
 				$sql=mysqli_query($conn,"SELECT * FROM users where u_mail='".$email."'");
 	
 				$result = mysqli_fetch_assoc($sql);
+				$json = json_encode($result);
+				echo $json;
 				echo $result['u_password']." ";
 				// // $result1 = password_verify($result['u_password'],$password);
 				// // echo $result1." ";
