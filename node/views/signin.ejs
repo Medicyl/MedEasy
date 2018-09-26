@@ -14,6 +14,7 @@
   </head>
   <body style="background-color: #4abdac">
     <div class="container">
+      <span><%= message %></span>
       <div class="row">
         <div class="col">
           
@@ -23,7 +24,7 @@
           <p class="medeasy-name" align="center">MEDEASY</p>
           <div class="form-content">
             <span style="font-weight: 500;font-size: 24px;">Sign In</span>
-            <form class="form-group">
+            <form class="form-group" method="POST">
               <span style="font-weight: 500;">Email ID </span>
               <br>
               <input type="email" name="mail" required="True"><br><br>
