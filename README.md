@@ -1,2 +1,2 @@
 # MedEasy
-An online ecommerce site for medicines
+Ecommerce website for buying medicines
