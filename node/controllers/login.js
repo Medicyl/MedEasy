@@ -75,6 +75,7 @@ module.exports=function(app){
         var check=function(isMatch,user){
             if(isMatch){
                 req.session.user=user;
+                // console.log(req.session.user);
             
                 res.redirect("/");
             }else{
