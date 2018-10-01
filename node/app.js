@@ -4,7 +4,7 @@ var config=require("./config/database");
 var Users=require("./models/users");
 var login=require("./controllers/login");
 var bparser=require("body-parser");
-
+var home=require("./controllers/home");
 
 mongoose.connect(config.database);
 var db=mongoose.connection;
@@ -23,6 +23,7 @@ app.get("/test",function(req,res){
 });
 
 login(app);
+home(app);
 
 
 app.listen(3000);
