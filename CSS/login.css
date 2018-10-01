@@ -1,0 +1,27 @@
+.medeasy-name{
+  font-family: 'Audiowide';
+  font-size: 34px;
+  color: #fc4a1a;
+}
+
+.btn{
+  width: 100%; 
+  background-color: #fc4a1a;
+}
+
+.btn:hover{
+  background-color:#fff ;
+  border:0.5px solid #fc4a1a; 
+  color:#fc4a1a;
+  transition:all linear 0.1s; 
+
+}
+
+
+.card-panel{
+	margin-bottom: 0px;
+}
+
+.container{
+	background:#4abdac;
+}
