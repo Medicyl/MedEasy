@@ -1,56 +1,50 @@
-
-<!------ Include the above in your HEAD tag ---------->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trial</title>
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../CSS/test.css">
-  <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
-  </head>
+  <link rel="stylesheet" type="text/css" href="../CSS/navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body>
   <!--=========-TOP_BAR============-->
   <nav class="topBar">
     <div class="container">
       <ul class="list-inline pull-left hidden-sm hidden-xs">
-        <li><span style="color: #fff;">Have a question?</span> &nbsp;<span style="color: #fff;" href="../HTML/contact.html">Contact Us</span></li>
+        <li><span style="color: #fff;">Have a question?</span> &nbsp;<a href="../HTML/contact.html"><span style="color: #fff;">Contact Us</span></a></li>
       </ul>
       <ul class="topBarNav pull-right">
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-5"></i><span class="hidden-xs" style="color: #fff;">My Account<i class="fa fa-angle-down ml-5"></i></span> </a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-5" style="color: #fff;"></i><span class="hidden-xs" style="color: #fff;">My Account<i class="fa fa-angle-down ml-5" style="color: #fff;"></i></span> </a>
           <ul class="dropdown-menu w-150" role="menu">
             <li><a href="login.html">Login</a>
             </li>
             <li><a href="register.html">Create Account</a>
             </li>
             <li class="divider"></li>
-            <li><a href="wishlist.html">Wishlist (5)</a>
+            <li><a href="#">My Cart</a>
             </li>
-            <li><a href="cart.html">My Cart</a>
-            </li>
-            <li><a href="checkout.html">Checkout</a>
+            <li><a href="../HTML/checkout.html">Checkout</a>
             </li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-shopping-basket mr-5"></i> <span class="hidden-xs" style="color: #fff;">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-shopping-basket mr-5" style="color: #fff;"></i> <span class="hidden-xs" style="color: #fff;">
                                 Cart <sup class="text-primary" style="color: #fff;">(3)</sup>
-                                <i class="fa fa-angle-down ml-5"></i>
+                                <i class="fa fa-angle-down ml-5" style="color: #fff;"></i>
                             </span> </a>
           <ul class="dropdown-menu cart w-250" role="menu">
             <li>
               <div class="cart-items">
                 <ol class="items">
                   <li>
-                    <a href="#" class="product-image"> <img src="https://lh3.googleusercontent.com/-uwagl9sPHag/WM7WQa00ynI/AAAAAAAADtA/hio87ZnTpakcchDXNrKc_wlkHEcpH6vMwCJoC/w140-h148-p-rw/profile-pic.jpg" class="img-responsive" alt="Sample Product "> </a>
+                    <a href="#" class="product-image"> <img src="https://lh3.googleusercontent.com/-Gy3KAlilHAw/WNf7a2eL5YI/AAAAAAAAD2Y/V3jUt14HiZA3HLpeOKkSaOu57efGuMw9ACL0B/w245-d-h318-n-rw/shoes_01.jpg" class="img-responsive" alt="Sample Product "> </a>
                     <div class="product-details">
                       <div class="close-icon"> <a href="#"><i class="fa fa-close"></i></a> </div>
-                      <p class="product-name"> <a href="#">Sumi9xm@gmail.com</a> </p> <strong>1</strong> x <span class="price text-primary">$59.99</span> </div>
+                      <p class="product-name"> <a href="#">xyz@gmail.com</a> </p> <strong>1</strong> x <span class="price text-primary">Rs 59.99</span> </div>
                     <!-- end product-details -->
                   </li>
                   <!-- end item -->
@@ -75,7 +69,7 @@
             </li>
             <li>
               <div class="cart-footer"> <a href="#" class="pull-left"><i class="fa fa-cart-plus mr-5"></i>View
-          Cart</a> <a href="#" class="pull-right"><i class="fa fa-shopping-basket mr-5"></i>Checkout</a> </div>
+          Cart</a> <a href="../HTML/Checkout.html" class="pull-right"><i class="fa fa-shopping-basket mr-5"></i>Checkout</a> </div>
             </li>
           </ul>
         </li>
@@ -170,14 +164,14 @@
             <!-- Collect the nav links,  -->
             <div class="collapse navbar-collapse navbar-1" style="margin-top: 0px;">            
               <ul class="nav navbar-nav">
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Home</a></li>
+                <li><a href="../PHP/index.php">Home</a></li>
                   
                 <li class="dropdown megaDropMenu">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Shop <i class="fa fa-angle-down ml-5"></i></a>
                   <ul class="dropdown-menu row">
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
-                        <li>Products Grid View</li>
+                        <li>Products</li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">Sidebar Left</a></li>
                         <li><a href="#">Products Left</a></li>
@@ -201,30 +195,27 @@
                     </li>
                     <li class="col-sm-3 col-xs-12">
                         <ul class="list-unstyled">
-                        <li>Sumit Kumar</li>
+                        <li>User</li>
                      </ul>
-                      <img src="https://lh3.googleusercontent.com/-uwagl9sPHag/WM7WQa00ynI/AAAAAAAADtA/hio87ZnTpakcchDXNrKc_wlkHEcpH6vMwCJoC/w140-h148-p-rw/profile-pic.jpg" class="img-responsive" alt="menu-img">
+                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-responsive" alt="menu-img">
                     </li>
                   </ul>
                 </li>
                   
+                <li><a href="../HTML/About.html"  >About Us</a></li>
+                <li><a href="../HTML/contact.html" >Contact Us</a></li>
+                <li><a href="#">Shop</a></li>
+
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Page <i class="fa fa-angle-down ml-5"></i></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" >Pages<i class="fa fa-angle-down ml-5"></i></a>
                   <ul class="dropdown-menu dropdown-menu-left">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Register or Login</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Password Recovery</a></li>
+                    <li><a href="../HTML/FAQ.html">FAQ</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Terms & Conditions</a></li>
                     <li><a href="#">404 Not Found</a></li>
-                    <li><a href="#">Short Code</a></li>
-                    <li><a href="#">Coming Soon</a></li>
                   </ul>
                 </li>
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Blog</a></li>
-                <li><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">My List</a></li>
+
               </ul>
             </div><!-- /.navbar-collapse -->
           </div>

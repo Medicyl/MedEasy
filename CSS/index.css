@@ -1,0 +1,10 @@
+
+  .parallax {
+    background-image: url("https://omsi.in/wp-content/uploads/2018/04/Online-Medical-Store-visakhapatnam.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
