@@ -1,3 +1,4 @@
+
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Trial</title>
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../CSS/test.css">
+  <link rel="stylesheet" type="text/css" href="../assests/test.css">
   <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
   </head>
 
@@ -23,8 +24,14 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-5"></i><span class="hidden-xs" style="color: #fff;">My Account<i class="fa fa-angle-down ml-5"></i></span> </a>
           <ul class="dropdown-menu w-150" role="menu">
-            <li><a href="login.html">Login</a>
-            </li>
+            <% if(login=="yes") {%>
+                <li><a href="http://localhost:3000/logout">Hi,<%= name %></a></li>
+                <li><a href="http://localhost:3000/logout">logout</a></li>
+                <li><a href="http://localhost:3000/details">your details</a></li>
+            <%} else { %>
+                <li><a href="http://localhost:3000/signin">login</a></li>
+            <% } %>
+             
             <li><a href="register.html">Create Account</a>
             </li>
             <li class="divider"></li>
@@ -101,47 +108,39 @@
           <div class="col-sm-3">
             <select class="form-control input-lg" name="category">
               <option value="all">All Categories</option>
-              <optgroup label="Health Care">
-                <option value="dettolantiseptic">Dettol Antiseptic</option>
-                <option value="moovointment">Moov Ointment</option>
-                <option value="zbalm">Zandu Balm</option>
-                <option value="eno">Eno</option>
-                <option value="relispray">Relispray</option>
-                <option value="bandaid">Johnson & Johnson Band-Aid</option>
-                <option value="coughq">CoughQ</option>
-                <option value="pudinhara">Dabar Pudinhara</option>
-                <option value="dollo">Dollo</option>
+              <optgroup label="Mens">
+                <option value="shirts">Shirts</option>
+                <option value="coats-jackets">Coats & Jackets</option>
+                <option value="underwear">Underwear</option>
+                <option value="sunglasses">Sunglasses</option>
+                <option value="socks">Socks</option>
+                <option value="belts">Belts</option>
               </optgroup>
-              <optgroup label="Herbal And Ayrveda">
-                <option value="dpudinhara">Dabar Pudinhara</option>
-                <option value="amritarishta">Dabar Amritarishta</option>
-                <option value="btablet">Brahmi Tablet</option>
-                <option value="ojasvita">Sri Sri Tattva Ojasvita</option>
-                <option value="ashwagandha">Dabar Ashwagandha Churna</option>
-                <option value="pchyavanprash">Patanjali Chyavanprash</option>
+              <optgroup label="Womens">
+                <option value="bresses">Bresses</option>
+                <option value="t-shirts">T-shirts</option>
+                <option value="skirts">Skirts</option>
+                <option value="jeans">Jeans</option>
+                <option value="pullover">Pullover</option>
               </optgroup>
-              <optgroup label="Food And Nutrition">
-                <option value="glucond">Glucon-D</option>
-                <option value="htea">Herbal Tea</option>
-                <option value="dchyavanprash">Dabar Chyavanprash</option>
-                <option value="ojasvita">Sri Sri Tattva Ojasvita</option>
-                <option value="protinex">Protinex</option>
-                <option value="dhoney">Dabar Honey</option>
+              <option value="kids">Kids</option>
+              <option value="fashion">Fashion</option>
+              <optgroup label="Sportwear">
+                <option value="shoes">Shoes</option>
+                <option value="bags">Bags</option>
+                <option value="pants">Pants</option>
+                <option value="swimwear">Swimwear</option>
+                <option value="bicycles">Bicycles</option>
               </optgroup>
-              <optgroup label="Diabetic Care">
-                <option value="sugarfree">Sugar Free</option>
-                <option value="sugarfightertea">Sugar fighter sweetened green tea</option>
-                <option value="protinexdiabetes">Protinex diabetes powder</option>
-                <option value="healthvitalivcare">Healthvita Liv Care Capsule</option>
-              </optgroup>
-              <optgroup label="Medical Equipments">
-                <option value="morpenbpmonitor">Dr. Morpen BP Monitor</option>
-                <option value="omoronthermometer">Omoron Thermometer</option>
-                <option value="flamingoarm">Flamingo Arm Supporter</option>
-                <option value="flamingoknee">Flamingo Knee Pad</option>
-                <option value="morpengloves">Dr. Morpen Hand Gloves</option>
-                <option value="dispovansyringe">Dispovan Syringe</option>
-                <option value="omoronglucosemonitor">Omoron Glucose Monitor</option>
+              <option value="bags">Bags</option>
+              <option value="shoes">Shoes</option>
+              <option value="hoseholds">HoseHolds</option>
+              <optgroup label="Technology">
+                <option value="tv">TV</option>
+                <option value="camera">Camera</option>
+                <option value="speakers">Speakers</option>
+                <option value="mobile">Mobile</option>
+                <option value="pc">PC</option>
               </optgroup>
             </select>
           </div>
@@ -299,5 +298,3 @@
       })
     }(jQuery, this);
   </script>
-</body>
-</html>

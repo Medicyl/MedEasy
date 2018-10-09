@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="../CSS/Checkout.css">
 </head>
 <body>
+
 <div class="row">
   <div class="col-75">
     <div class="container">

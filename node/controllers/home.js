@@ -4,6 +4,18 @@ var cookieParser=require("cookie-parser");
 
 module.exports=function(app){
     app.get("/",function(req,res){
-        res.send(req.session.user.first_name);
+        if(req.session.user){  
+            res.render("home",{login:"yes",name:req.session.user.first_name});
+        }else{
+            res.render("home",{login:"no",name:null});
+        }
+    app.get("/details",function(req,res){
+        if(req.session.user){
+            res.render("details",{user:req.session.user});
+
+        }
+    });
+
+        
     });
 }
