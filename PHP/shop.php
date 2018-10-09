@@ -5,13 +5,12 @@
 <html lang="en">
   <head>
     <title>MedEasy</title>
-    <link rel="stylesheet" type="text/css" href="../CSS/shop.css">
-
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   </head>
 
@@ -22,15 +21,12 @@
 
                     <div class="card">
                       <div class="card-image">
-                        <img src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png">
-                        <ul>
-                          <li>
-                            <a class="btn-floating halfway-fab waves-effect waves-light cyan"><i class="material-icons">add_shopping_cart</i></a>
-                          </li>
-                          <li>                          
-                              <a class="btn-floating halfway-fab waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                          </li>
-                        </ul>
+                        <img class="activator" src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png">
+
+                            <a class="btn-floating  waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
+
+                            <a class="activator btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+
                       </div>
                       <div class="card-content">
                         <p>Crocin</p>
