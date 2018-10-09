@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    <link rel="stylesheet" href="../css/admin.css">
+   
+    </head>
+
+    <body>
+
+        <header>
+            <div class="navbar-fixed">
+                <div class="nav-wrapper">
+                    <i class="material-icons" style="font-size:2rem; cursor: pointer;">notifications_none<small class="notification-badge">5</small></i>
+                    <span class="avtar-status avtar-online" style="padding:10px;">
+                        <img src="avatar.png" alt="avatar" height="50px" width="50px">
+                        <i></i>
+                    </span>
+                    <a href="#" style="text-decoration:none; color: white; font-size: 200%">Logout</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col s12 m6 l3">
+                    <div class="card status-blue">
+                        <div class="card-content white-text">
+                            <div class="row">
+                                <div class="col s7" style="margin:25px 0px;">
+                                    <i class="material-icons background-round mt-5" style="font-size:2rem">add_shopping_cart</i>
+                                    <p>ORDERS</p>
+                                </div>
+                                <div class="col s5 right-align ">
+                                    <h5>900</h5>
+                                    <p>New</p>
+                                    <p style="margin-top:10px;">6,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card status-red">
+                        <div class="card-content white-text">
+                            <div class="row">
+                                <div class="col s7" style="margin:25px 0px;">
+                                    <i class="material-icons background-round mt-5" style="font-size:2rem">add_shopping_cart</i>
+                                    <p>Clients</p>
+                                </div>
+                                <div class="col s5 right-align ">
+                                    <h5>1885</h5>
+                                    <p>New</p>
+                                    <p style="margin-top:10px;">19200</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="card status-yellow">
+                            <div class="card-content white-text">
+                                <div class="row">
+                                    <div class="col s7" style="margin:25px 0px;">
+                                        <i class="material-icons background-round mt-5" style="font-size:2rem">add_shopping_cart</i>
+                                        <p>SALES</p>
+                                    </div>
+                                    <div class="col s5 right-align ">
+                                        <h5>80%</h5>
+                                        <p>Growth</p>
+                                        <p style="margin-top:10px;">34,260</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col s12 m6 l3">
+                            <div class="card status-green">
+                                <div class="card-content white-text">
+                                    <div class="row">
+                                        <div class="col s7" style="margin:25px 0px;">
+                                            <i class="material-icons background-round mt-5" style="font-size:2rem">add_shopping_cart</i>
+                                            <p>PROFIT</p>
+                                        </div>
+                                        <div class="col s5 right-align ">
+                                            <h5>$800</h5>
+                                            <p>Today</p>
+                                            <p style="margin-top:10px;">$139,000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+
+
+
+                   <div class="row">
+                       <div class="col s12 l7">
+                       
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                            <canvas id="myChart" height="100"></canvas>
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Revenue For 2017<i class="material-icons right">more_vert</i></span>
+                           
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Revenue For 2017<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+             
+                    </div>
+
+
+                    <div class="col s12 l5">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <canvas id="myChart1" height="142"></canvas>
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Sales<i class="material-icons right">more_vert</i></span>
+                            
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Sales<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 l5">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                
+                            <canvas id="myChart2" height="100"></canvas>
+                            </div>
+                            <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">PROFIT<i class="material-icons right">more_vert</i></span>
+                            
+                            </div>
+                            <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">PROFIT<i class="material-icons right">close</i></span>
+                            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+
+    <script>
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"],
+                datasets: [{
+                    label: 'in %',
+                    data: [12, 19, 3, 5, 2, 3,5],
+                    backgroundColor: [
+                        'rgba(255, 0, 0, 0.2)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+
+<script>
+        var ctx = document.getElementById("myChart1").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Health Care","Herbal And Ayurveda","Food And Nutrition","Diabetic Care","Medical Equipments"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+
+
+        <script>
+            var ctx = document.getElementById("myChart2").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday","Sunday"],
+                    datasets: [{
+                        label: 'in $',
+                        data: [12, 19, 3, 5, 2, 3,5],
+                        backgroundColor: [
+                            'rgba(255, 255, 255, 0.1)',
+                        ],
+                        borderWidth: 1,
+                        borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                    ],
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            });
+        </script>
+    </body>
+  </html>
