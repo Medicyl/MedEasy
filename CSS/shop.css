@@ -1,0 +1,24 @@
+
+.price{
+	padding-top: 5px;
+	padding-left: 7px;
+}
+
+.product-text{
+	font-family:verdana;
+	font-size: 20px;
+}
+.add-item{
+	text-align: center;		
+}
+
+.card-title{
+	text-align: center;
+
+}
+.card-image{
+	border: none;
+	border-width: none;
+	background: rgb(63,94,251);
+	background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
