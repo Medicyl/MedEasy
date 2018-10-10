@@ -14,13 +14,13 @@
     <link rel="stylesheet" type="text/css" href="../CSS/shop.css">
 
   </head>
-<style type="text/css">
-</style>
+
   <body>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -31,8 +31,10 @@
                       
                             <div class="add-item">
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
+
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+
+                                  <a href="../PHP/product.php" class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
                             </div>
                      
                       
@@ -46,121 +48,12 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
-                         
-            </div>
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
-                         
-            </div>            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
-                         
-            </div>
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
-                         
-            </div>
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
+
                          
             </div>
 
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -173,6 +66,9 @@
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
                                   &nbsp;&nbsp;&nbsp;&nbsp;
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
+
                             </div>
                      
                       
@@ -186,38 +82,12 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
-                         
-            </div>
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
+
                          
             </div>
 
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -230,6 +100,9 @@
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
                                   &nbsp;&nbsp;&nbsp;&nbsp;
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
+
                             </div>
                      
                       
@@ -243,38 +116,12 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
-                         
-            </div>
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
+
                          
             </div>
 
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -287,6 +134,9 @@
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
                                   &nbsp;&nbsp;&nbsp;&nbsp;
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
+
                             </div>
                      
                       
@@ -300,66 +150,12 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
-                         
-            </div>
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
-                         
-            </div>
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
+
                          
             </div>
 
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -372,6 +168,9 @@
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
                                   &nbsp;&nbsp;&nbsp;&nbsp;
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
+
                             </div>
                      
                       
@@ -385,10 +184,12 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
+
                          
             </div>
 
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -401,6 +202,9 @@
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
                                   &nbsp;&nbsp;&nbsp;&nbsp;
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
+
                             </div>
                      
                       
@@ -414,10 +218,45 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
+
+                         
+            </div>
+            <div class="col m2">
+              
+                    <div class="card">
+                      <div class="card-image activator">
+                          <div class="price">
+                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
+                        </div>
+                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
+                      
+                      
+                            <div class="add-item">
+                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
+
+                            </div>
+                     
+                      
+                          <div class="card-content">
+                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
+                          </div>
+                      
+                      </div>
+                      <div class="card-reveal waves-effect waves-light deep-orange">
+                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
+                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
+                    </div>
+                    </div>
+
                          
             </div>
 
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -430,35 +269,9 @@
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
                                   &nbsp;&nbsp;&nbsp;&nbsp;
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
-                         
-            </div>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
 
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
                             </div>
                      
                       
@@ -472,10 +285,11 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
-                         
-            </div>
 
+                         
+            </div>
             <div class="col m2">
+              
                     <div class="card">
                       <div class="card-image activator">
                           <div class="price">
@@ -488,35 +302,9 @@
                                   <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
                                   &nbsp;&nbsp;&nbsp;&nbsp;
                                   <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
-                            </div>
-                     
-                      
-                          <div class="card-content">
-                            <p align="center" class="product-text white-text"><b>Crocin</b></p>
-                          </div>
-                      
-                      </div>
-                      <div class="card-reveal waves-effect waves-light deep-orange">
-                      <span class="card-title white-text text-darken-4">Crocin<i class="material-icons right">close</i></span>
-                      <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
-                    </div>
-                    </div>
-                         
-            </div>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;
+                                  <a class="btn-floating waves-effect waves-light deep-blue"><i class="material-icons">visibility</i></a>
 
-            <div class="col m2">
-                    <div class="card">
-                      <div class="card-image activator">
-                          <div class="price">
-                          <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ 189</a>
-                        </div>
-                          <img  src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
-                      
-                      
-                            <div class="add-item">
-                                  <a class=" btn-floating waves-effect waves-light cyan" ><i class="material-icons">add_shopping_cart</i></a>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;
-                                  <a class=" activator  btn-floating waves-effect waves-light deep-orange"><i class="material-icons">info_outline</i></a>
                             </div>
                      
                       
@@ -530,9 +318,10 @@
                       <p style="font-size: 20px;" class="white-text text-darken-4">Crocin is a tablet.<br>Preferred for Headache,pain relief.</p>
                     </div>
                     </div>
+
                          
             </div>
-                                    
+                                   
         </div>
     </div>
   </body>
