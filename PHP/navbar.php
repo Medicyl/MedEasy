@@ -167,7 +167,7 @@
                 <li><a href="../PHP/index.php">Home</a></li>
                   
                 <li class="dropdown megaDropMenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Shop <i class="fa fa-angle-down ml-5"></i></a>
+                  <a href="../PHP/shop.php" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Shop <i class="fa fa-angle-down ml-5"></i></a>
                   <ul class="dropdown-menu row">
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
@@ -204,7 +204,7 @@
                   
                 <li><a href="../HTML/About.html"  >About Us</a></li>
                 <li><a href="../HTML/contact.html" >Contact Us</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="../PHP/shop.php">Shop</a></li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" >Pages<i class="fa fa-angle-down ml-5"></i></a>

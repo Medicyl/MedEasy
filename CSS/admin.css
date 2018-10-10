@@ -1,0 +1,38 @@
+.container{
+    padding-top: 0px;
+    margin-top: 0%;
+}
+.card{
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+.status-blue .card-content{
+    background: linear-gradient(to top right, #0099cc 0%, #00ccff 72%);
+}
+
+.status-red .card-content{
+    background: linear-gradient(to top right, #ff626a 0%, #f48cac 72%);
+}
+
+.status-yellow .card-content{
+    background: linear-gradient(to top right, #ff890b 0%, #ffc726 72%);
+}
+
+.status-green .card-content{
+    background: linear-gradient(to top right, #38b466 0%, #1fe6b2 72%);
+}
+
+.navbar-fixed{
+    text-align: right;
+    padding-right: 2%
+}
+
+header{
+    color: white;
+    z-index: 2;
+    padding-top: 0%;
+    background: linear-gradient(to right, #a33296 0%, #fd6d41 72%);
+}
+
+.nav-wrapper{
+}
