@@ -50,6 +50,7 @@ module.exports=function(app){
                         if(err) throw err;
                 
                         NewUser.password=hash;
+                        
                         NewUser.save(function(err){
                             console.log(err);                                                
                         });
