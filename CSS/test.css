@@ -1,5 +1,5 @@
 body{
-  background:rgba(74, 189, 172,1) !important; 
+  background:#efefef;
   font-family:'Arial'sans-serif;
   font-size:62.5%;
 }
@@ -92,7 +92,7 @@ img{
   color:goldenrod;
 }
 #product_layout_1 .product_info .product_description{
- font-size:2em;
+ font-size:1.4em;
 }
 #product_layout_1 .product_info .related_info{
   color:#a6a6a6;
@@ -141,7 +141,7 @@ img{
   display:block;
 }
 #product_layout_1 .product_info .buying .quantity [type="text"]{
-  width:70px;
+  width:40px;
   height:40px;
   border:1px solid #ccc;
   border-radius:3px;
