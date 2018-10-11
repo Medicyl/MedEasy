@@ -1,0 +1,88 @@
+*{
+    /* margin:0px; */
+    /* padding:0px; */
+}
+
+body{
+    background:#4abdac;
+    height:100%;
+    width:100%;
+    position: absolute;
+}
+.container-fluid
+{
+    height:100%;
+
+}
+
+.allDetails
+{
+    height:100% !important;
+}
+.avatar{
+
+    width:100%;
+    height:auto;
+    border-radius:50%;
+}
+
+.main-section{
+box-shadow:7px 0px 4px -4px rgb(0,0,0,0.5),-7px 0px 4px -4px rgb(0,0,0,0.5);
+background: #fff;
+padding-top:50px;
+}
+.sub-section{
+    height:100%;
+}
+
+.basic
+{   height:auto;
+    text-align: center; 
+    box-shadow:4px 0 4px -4px rgb(0,0,0,0.5) !important;
+}
+.details
+{   padding-top:30px;
+    text-align: left;
+    padding-bottom:30px;
+    
+}
+.edit{
+    text-decoration: none;
+    background-color: #fc4a1a;
+    padding:8px;
+    border-radius:3px;
+    width:100%;
+    margin-top:15px;
+    color:white;   
+    transition: all linear  0.1s;
+}
+.edit:hover{
+    text-decoration: none;
+    color: #fc4a1a;
+    border:2px solid  #fc4a1a;
+    background:transparent;
+
+
+}
+}
+.order{
+}
+.cards
+{   margin-top:20px !important;
+    padding:5px;    
+
+    width:100%;
+}
+p.orderdetails {
+    margin-right:10px;
+    
+}
+@media (max-width:1500px) {
+    .avatar{
+        width:70%;
+    }
+
+    .basic{
+        box-shadow:none;
+    }
+}
