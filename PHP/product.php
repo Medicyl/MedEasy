@@ -59,7 +59,7 @@
                    <input type="text" placeholder="100">
                  </div>
                  <div class="cart">
-                   <a href="#" class="add">Add to Cart <i class="fa fa-shopping-cart fa-lg"></i></a>
+                   <a href="../PHP/Checkout.php" class="add">Add to Cart <i class="fa fa-shopping-cart fa-lg"></i></a>
                  </div>
           </div>
           </div>
@@ -93,7 +93,7 @@
                 <div class="products">
                   <h4 class="title">Saradon</h4>
                   <div class="image">
-                    <img src="https://5.imimg.com/data5/DC/FJ/MY-12931455/saridon-tablet-500x500.jpg"/>
+                    <img src="https://3.imimg.com/data3/BK/KR/MY-22875491/disprin-tablets-500x500.jpg"/>
                   </div>
                   <h4 class="price">₹ 45</h4>
                 </div>
