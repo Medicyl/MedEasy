@@ -5,20 +5,21 @@ var inventoryItemSchema=new mongoose.Schema({
     inventoryItemId:{type:String},
     mod:{type:Date},
     expiry:{type:String},
-    status:{type:String},
-    itemImage:{type:String}
+    status:{type:String}
+    
 });
 var ParentItemSchema=new mongoose.Schema({
     parentItemId:{type:String},
     name:{type:String},
-    quantity:{type:String},
-    cost:{type:String},
+    quantity:{type:Number},
+    cost:{type:Number},
     brand:{type:String},
+    itemImage:{type:String}
 
 });
 
 var InventoryItem=mongoose.model("InventoryItem",inventoryItemSchema);
 var ParentItem=mongoose.model("ParentItem",ParentItemSchema);
 
-module.exports=InventoryItem;
-module.exports=ParentItem;
+module.exports.InventoryItem=InventoryItem;
+module.exports.ParentItem=ParentItem;
