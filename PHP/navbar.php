@@ -21,10 +21,24 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-5" style="color: #fff;"></i><span class="hidden-xs" style="color: #fff;">My Account<i class="fa fa-angle-down ml-5" style="color: #fff;"></i></span> </a>
           <ul class="dropdown-menu w-150" role="menu">
-            <li><a href="login.html">Login</a>
-            </li>
-            <li><a href="register.html">Create Account</a>
-            </li>
+            <?php
+              if(isset($_SESSION['mail']))
+              {
+                 echo 
+                '<li><a href="../PHP/logout.php">Logout</a>';
+              }
+              
+            ?>
+            <?php
+              if(empty($_SESSION['mail']))
+              {
+                 echo 
+                '<li><a href="../HTML/signin.html">Login</a></li>
+                <li><a href="../HTML/createaccount.html">Create Account</a></li>';
+              }
+              
+            ?>            
+
             <li class="divider"></li>
             <li><a href="#">My Cart</a>
             </li>
