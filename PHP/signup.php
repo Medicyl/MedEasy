@@ -1,5 +1,6 @@
 <?php 
 	include_once "connection.php";
+
 	if(isset($_POST['submit']))
 	{
 		$fname=mysqli_real_escape_string($conn,$_POST['ufname']);
@@ -15,7 +16,16 @@
 		if(empty($result)){
 			$sql2="INSERT INTO users(u_fname,u_lname,u_mail,u_password,u_phone,u_birth) VALUES ('$fname','$lname','$email','$hashpwd','$contact', '$bdate')";
 			if ($conn->query($sql2) === TRUE) {
-			    header("location:../HTML/signin.html");
+				session_start();
+				
+				$_SESSION['fname']=$fname;
+				$_SESSION['lname']=$lname;
+				$_SESSION['password']=$password;
+				$_SESSION['mail']=$email;
+			    $_SESSION['phone']=$contact;
+				$_SESSION['birth']=$bdate;
+
+			    header("location:../PHP/index.php");
 			} else {
 			    echo "Error: " . $sql2 . "<br>" . $conn->error;
 			}			

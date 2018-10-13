@@ -1,19 +1,6 @@
 
 <!------ Include the above in your HEAD tag ---------->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trial</title>
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../assests/test.css">
-  <script src="https://use.fontawesome.com/07b0ce5d10.js"></script>
-  </head>
-
-<body>
   <!--=========-TOP_BAR============-->
   <nav class="topBar">
     <div class="container">
@@ -25,15 +12,15 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-5"></i><span class="hidden-xs" style="color: #fff;">My Account<i class="fa fa-angle-down ml-5"></i></span> </a>
           <ul class="dropdown-menu w-150" role="menu">
             <% if(login=="yes") {%>
-                <li><a href="http://localhost:3000/logout">Hi,<%= name %></a></li>
+                <li><a href="#">Hi,<%= name %></a></li>
                 <li><a href="http://localhost:3000/logout">logout</a></li>
                 <li><a href="http://localhost:3000/details">your details</a></li>
             <%} else { %>
                 <li><a href="http://localhost:3000/signin">login</a></li>
+                <li><a href="http://localhost:3000/signup">Create Account</a></li>
             <% } %>
              
-            <li><a href="register.html">Create Account</a>
-            </li>
+          
             <li class="divider"></li>
             <li><a href="wishlist.html">Wishlist (5)</a>
             </li>
@@ -184,7 +171,7 @@
                     <li class="col-sm-3 col-xs-12">
                       <ul class="list-unstyled">
                         <li>Products Grid View</li>
-                        <li><a href="#">Products</a></li>
+                        <li><a href="http://localhost:3000/shop">Products</a></li>
                         <li><a href="#">Sidebar Left</a></li>
                         <li><a href="#">Products Left</a></li>
                      </ul>

@@ -342,38 +342,3 @@ div[class^="col-"] {
 }
 
 
-/***********************
-     megaDropMenu
-////////////////////////////*/
-
-.navbar-default .container{
-    position:relative;
-}
-.navbar-default .navbar-collapse li.dropdown.megaDropMenu {
-    position: static;
-}
-
-.navbar-default .navbar-collapse li.dropdown.megaDropMenu .dropdown-menu{
-    width: 100%;
-}
-.navbar-default .navbar-collapse li.dropdown.megaDropMenu .dropdown-menu li ul li:first-child{
-    padding: 20px 0px 5px 15px;
-    font-size: 16px;
-    text-transform: uppercase;
-    /* text-align: center; */
-    color: #0cd4d2;
-}
-.navbar-default .navbar-collapse li.dropdown.megaDropMenu .dropdown-menu li ul li a{
-    display:block;color:#878c94;font-size: 14px;text-decoration:none;padding:8px 15px;
-}
-.navbar-default .navbar-collapse li.dropdown.megaDropMenu .dropdown-menu li ul li a:hover{
-     color: #00BCD4;
-    text-decoration: none;
-   background-color: rgba(0, 0, 0, 0.02);
-}
-
-.navbar-default .navbar-collapse li.dropdown.megaDropMenu .dropdown-menu img{
-    display: block;
-    max-width: 100%;
-    padding: 20px;
-}

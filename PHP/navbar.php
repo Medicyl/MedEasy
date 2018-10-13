@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="../CSS/navbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,14 +21,29 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false"> <i class="fa fa-user mr-5" style="color: #fff;"></i><span class="hidden-xs" style="color: #fff;">My Account<i class="fa fa-angle-down ml-5" style="color: #fff;"></i></span> </a>
           <ul class="dropdown-menu w-150" role="menu">
-            <li><a href="login.html">Login</a>
-            </li>
-            <li><a href="register.html">Create Account</a>
-            </li>
+            <?php
+              if(isset($_SESSION['mail']))
+              {
+                 echo 
+                '<li><a href="../PHP/editprofile.php">Edit Profile</a>
+                <li><a href="../PHP/logout.php">Logout</a>';
+              }
+              
+            ?>
+            <?php
+              if(empty($_SESSION['mail']))
+              {
+                 echo 
+                '<li><a href="../HTML/signin.html">Login</a></li>
+                <li><a href="../HTML/createaccount.html">Create Account</a></li>';
+              }
+              
+            ?>            
+
             <li class="divider"></li>
             <li><a href="#">My Cart</a>
             </li>
-            <li><a href="../HTML/checkout.html">Checkout</a>
+            <li><a href="../PHP/Checkout.php">Checkout</a>
             </li>
           </ul>
         </li>
@@ -149,7 +165,7 @@
 </div>
     
     
-<nav class="navbar navbar-main navbar-default" role="navigation" style="opacity: 1;">
+<nav class="navbar-default" role="navigation" style="opacity: 1;">
           <div class="container">
             <!-- Brand and toggle -->
             <div class="navbar-header">
@@ -166,53 +182,16 @@
               <ul class="nav navbar-nav">
                 <li><a href="../PHP/index.php">Home</a></li>
                   
-                <li class="dropdown megaDropMenu">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Shop <i class="fa fa-angle-down ml-5"></i></a>
-                  <ul class="dropdown-menu row">
-                    <li class="col-sm-3 col-xs-12">
-                      <ul class="list-unstyled">
-                        <li>Products</li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Sidebar Left</a></li>
-                        <li><a href="#">Products Left</a></li>
-                     </ul>
-                    </li>
-                    <li class="col-sm-3 col-xs-12">
-                      <ul class="list-unstyled">
-                        <li>Products List View</li>
-                        <li><a href="#"> Sidebar Left</a></li>
-                        <li><a href="#">Products Left</a></li>
-                        <li><a href="#">Products Sidebar</a></li>
-                       </ul>
-                    </li>
-                    <li class="col-sm-3 col-xs-12">
-                      <ul class="list-unstyled">
-                        <li>Checkout</li>
-                        <li><a href="#">Step 1</a></li>
-                        <li><a href="#">Step 2</a></li>
-                        <li><a href="#">Step 3</a></li>
-                     </ul>
-                    </li>
-                    <li class="col-sm-3 col-xs-12">
-                        <ul class="list-unstyled">
-                        <li>User</li>
-                     </ul>
-                      <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-responsive" alt="menu-img">
-                    </li>
-                  </ul>
-                </li>
                   
                 <li><a href="../HTML/About.html"  >About Us</a></li>
                 <li><a href="../HTML/contact.html" >Contact Us</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="../PHP/shop.php">Shop</a></li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" >Pages<i class="fa fa-angle-down ml-5"></i></a>
                   <ul class="dropdown-menu dropdown-menu-left">
                     <li><a href="../HTML/FAQ.html">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">404 Not Found</a></li>
+                    <li><a href="../HTML/Terms.html">Terms & Conditions</a></li>
                   </ul>
                 </li>
 
