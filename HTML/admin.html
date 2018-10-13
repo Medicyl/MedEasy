@@ -156,15 +156,86 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col s12 l3 offset-l1" style="height:100%">
+                        <div class="card-panel teal" style="height:100%">
+                            <h5 style="color:white;">ADD Parent Item &nbsp;
+                            <!-- MODAL TRIGGERS -->
+                            <!-- <a href="#modal1" class="btn waves-effect"></a> -->
+                            <a class="btn-floating btn-large waves-effect waves-light red"  href="#modal1"><i class="material-icons">add</i></a></h5>
+                        </div>
+                            
+                    <!-- Modal Structure -->
+                    <div id="modal1" class="modal bottom-sheet">
+                        <div class="modal-content">
+                            <h4 style="text-align:center;width:100%;">ADD Parent Item</h4>
+                            <form>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input  id="parentid" type="text" class="validate" required>
+                                        <label for="parentid">Parent ID</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                            <input  id="name" type="text" class="validate" required>
+                                            <label for="name">Item Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div clss="col s12 l8">
+                                        <p><label class="range-field col s8">
+                                            Quantity<br/><br/>
+                                            <input type="range" id="test" min="0" max="100" required/>
+                                        </label>
+                                        </p>
+                                    </div>
+                                    <div class="col s12 l2 offset-l1" style="padding-top:0%">
+                                        <div class="input-field">
+                                                <input  id="cost" type="text" class="validate" required>
+                                                <label for="cost">Cost in &#8377;</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12 l4">
+                                        <div class="input-field col s6">
+                                            <input  id="bname" type="text" class="validate" required>
+                                            <label for="bname">Brand Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 l8">
+                                        <div class="file-field input-field">
+                                            <div class="btn">
+                                            <span>File</span>
+                                            <input type="file" multiple>
+                                            </div>
+                                            <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text" placeholder="Upload one or more image files">
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <a class="waves-effect waves-light btn">SUBMIT</a>
+                        </form>
+                        <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color:red">CLOSE&nbsp;<i class="material-icons" style="size:4rem;">clear</i></a>
+                        </div>
+                    </div>
                 </div>
+                </div>
+                <div class="col s12 l3" style="height:100%">
+                        <div class="card-panel orange" style="height:100%">
+                            <h5 style="color:white;">ADD Inventory Item &nbsp;
+                            <a href="#"><a class="btn-floating btn-large waves-effect waves-light white"><i class="material-icons" style="color:red">add</i></a></a></h5>
+                        </div>
+                </div>
+            
 
 
 
-
-      <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
 
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <script>
         var ctx = document.getElementById("myChart").getContext('2d');
         var myChart = new Chart(ctx, {
@@ -262,5 +333,14 @@
                 }
             });
         </script>
+    
+    <script>
+      $(document).ready(function(){
+    
+
+        // Init Modal
+        $('.modal').modal();
+      });
+    </script>
     </body>
   </html>
