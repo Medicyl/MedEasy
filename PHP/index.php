@@ -6,9 +6,8 @@
   <head>
     <title>MedEasy</title>
     <link rel="stylesheet" type="text/css" href="../CSS/index.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
 
   <nav>
@@ -30,10 +29,10 @@
     </div>
     <!-- Top Category Items -->
 <div class="container-fluid">
-  <h1 class="text-center mb-3">Bootstrap Multi-Card Carousel</h1>
+  <h1 class="text-center mb-3">Trending Items</h1>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner row w-100 mx-auto">
-      <div class="item col-md-4 active">
+      <div class="carousel-item col-md-4 active">
         <div class="card">
           <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
           <div class="card-body">
@@ -43,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="item col-md-4">
+      <div class="carousel-item col-md-4">
         <div class="card">
           <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
           <div class="card-body">
@@ -53,7 +52,7 @@
           </div>
         </div>
       </div>
-      <div class="item col-md-4">
+      <div class="carousel-item col-md-4">
         <div class="card">
           <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
           <div class="card-body">
@@ -63,7 +62,7 @@
           </div>
         </div>
       </div>
-      <div class="item col-md-4">
+      <div class="carousel-item col-md-4">
         <div class="card">
           <img class="card-img-top img-fluid" src="http://placehold.it/800x600/42ebf4/fff" alt="Card image cap">
           <div class="card-body">
@@ -73,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="item col-md-4">
+      <div class="carousel-item col-md-4">
         <div class="card">
           <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f49b41/fff" alt="Card image cap">
           <div class="card-body">
@@ -83,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="item col-md-4">
+      <div class="carousel-item col-md-4">
         <div class="card">
           <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f4f141/fff" alt="Card image cap">
           <div class="card-body">
@@ -93,7 +92,7 @@
           </div>
         </div>
       </div>
-      <div class="item col-md-4">
+      <div class="carousel-item col-md-4">
         <div class="card">
           <img class="card-img-top img-fluid" src="http://placehold.it/800x600/8e41f4/fff" alt="Card image cap">
           <div class="card-body">
@@ -112,6 +111,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+ 
   </div>
 </div>
   </body>
@@ -133,32 +133,37 @@ $(document).ready( function() {
   selectCarousel.carousel();
 
 
+});
+
+</script>
+
+<!-- Carousel Cards script -->
+<script type="text/javascript">
+var myCarousel = $('#myCarousel');
+  
   $("#myCarousel").on("slide.bs.carousel", function(e) {
     var $e = $(e.relatedTarget);
     var idx = $e.index();
     var itemsPerSlide = 3;
-    var totalItems = $(".item").length;
+    var totalItems = $(".carousel-item").length;
 
     if (idx >= totalItems - (itemsPerSlide - 1)) {
       var it = itemsPerSlide - (totalItems - idx);
       for (var i = 0; i < it; i++) {
         // append slides to end
         if (e.direction == "left") {
-          $(".item")
+          $(".carousel-item")
             .eq(i)
             .appendTo(".carousel-inner");
         } else {
-          $(".item")
+          $(".carousel-item")
             .eq(0)
             .appendTo($(this).find(".carousel-inner"));
         }
       }
     }
   });
+  myCarousel.carousel();
 
-
-})
 
 </script>
-
-<!-- Carousel Cards script -->
