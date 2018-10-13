@@ -25,7 +25,8 @@
               if(isset($_SESSION['mail']))
               {
                  echo 
-                '<li><a href="../PHP/logout.php">Logout</a>';
+                '<li><a href="../PHP/editprofile.php">Edit Profile</a>
+                <li><a href="../PHP/logout.php">Logout</a>';
               }
               
             ?>
@@ -42,7 +43,7 @@
             <li class="divider"></li>
             <li><a href="#">My Cart</a>
             </li>
-            <li><a href="../HTML/checkout.html">Checkout</a>
+            <li><a href="../PHP/Checkout.php">Checkout</a>
             </li>
           </ul>
         </li>
@@ -190,8 +191,7 @@
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" >Pages<i class="fa fa-angle-down ml-5"></i></a>
                   <ul class="dropdown-menu dropdown-menu-left">
                     <li><a href="../HTML/FAQ.html">FAQ</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="../HTML/Terms.html">Terms & Conditions</a></li>
                   </ul>
                 </li>
 
