@@ -54,7 +54,7 @@
 				  <div class="but">
 				  	<button type="submit" class="btn but1" >Submit</button>
 				  	<button type="button" class="btn but1" data-toggle="modal" data-target="#exampleModal">Change Password</button>
-				  </div>
+					</div>
 				</form>
 			</div>
 			<div class="col">	
