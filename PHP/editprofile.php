@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../CSS/EditProfile.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<title>Edit Profile</title>
@@ -41,7 +41,7 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="gender">Gender</label>
-				    <select class="form-control">
+				    <select class="form-control" id="gen">
 				    	<option name="Male">Male</option>
 				    	<option name="Female">Female</option>
 				    	<option name="Other">Other</option>
@@ -49,10 +49,10 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="Email">Email address</label>
-				    <input type="email" class="form-control" id="email" placeholder="Enter email"	required="True" value="<?php echo $_SESSION['mail']; ?>">
+				    <input type="email" class="form-control" id="email" placeholder="Enter email"	required="True" value="<?php echo $_SESSION['mail']; ?>" readonly>
 				  </div>
 				  <div class="but">
-				  	<button type="submit" class="btn but1" >Submit</button>
+				  	<button type="button" id="butt" name="butt" class="btn but1" >Submit</button>
 				  	<button type="button" class="btn but1" data-toggle="modal" data-target="#exampleModal">Change Password</button>
 					</div>
 				</form>
@@ -136,18 +136,62 @@
 			$('#message1').html('');		
 		}
 	});
-//For date max date=today
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; 
-var yyyy = today.getFullYear();
- if(dd<10){
-        dd='0'+dd
-    } 
-    if(mm<10){
-        mm='0'+mm
-    } 
+	//For date max date=today
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; 
+	var yyyy = today.getFullYear();
+	 if(dd<10){
+	        dd='0'+dd
+	    } 
+	    if(mm<10){
+	        mm='0'+mm
+	    } 
 
-today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("datefield").setAttribute("max", today);
+	today = yyyy+'-'+mm+'-'+dd;
+	document.getElementById("datefield").setAttribute("max", today);
+
+
+$(document).ready(function(){
+	    $('#butt').on('click',function(){
+		  var email = document.getElementById('email').value;
+		  var fname = document.getElementById('fname').value;
+		  var lname = document.getElementById('lname').value;
+		  var dob = document.getElementById('datefield').value;
+		  var gen = document.getElementById('gen').value;
+		  if(gen == 'Male'){
+		  	gen=0
+		  }
+		  else if(gen == 'Female'){
+		  	gen=1
+		  }
+		  else{
+		  	gen=2
+		  }
+		  
+		  var update = 1
+		  var data = {'email' : email , 'fname' : fname ,'lname' : lname,'dob' : dob, 'gen' : gen , 'update' : update};
+		  
+	            $.ajax({
+	                type:'POST',
+	                url:'profileUD.php',
+	                data:data,
+	                success:function(response){
+	                    console.log("success");
+			            var len = response.length;
+			            for(var i=0; i<len; i++){
+			                
+			                var fname = response[i].fname;
+			                var lname = response[i].lname;
+			                var dob = response[i].dob;
+			                var gen = response[i].gen;
+			                console.log(fname,lname,dob,gen,"ajax")
+			            }
+	                   }
+	            }); 
+	       
+	    });
+ 	
+	});
 </script>
+
