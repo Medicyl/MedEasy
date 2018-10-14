@@ -24,6 +24,7 @@
 				$_SESSION['mail']=$email;
 			    $_SESSION['phone']=$contact;
 				$_SESSION['birth']=$bdate;
+				$_SESSION['gen']=0;
 
 			    header("location:../PHP/index.php");
 			} else {
