@@ -41,10 +41,10 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="gender">Gender</label>
-				    <select class="form-control" id="gen">
-				    	<option name="Male">Male</option>
-				    	<option name="Female">Female</option>
-				    	<option name="Other">Other</option>
+				    <select class="form-control" id="gen" >
+				    	<option name="Male" <?=$_SESSION['gen'] == 0 ? ' selected="selected"' : '';?>>Male</option>
+				    	<option name="Female" <?=$_SESSION['gen'] == 1 ? ' selected="selected"' : '';?>>Female</option>
+				    	<option name="Other" <?=$_SESSION['gen'] == 2 ? ' selected="selected"' : '';?>>Other</option>
 				    </select>
 				  </div>
 				  <div class="form-group">
@@ -177,16 +177,19 @@ $(document).ready(function(){
 	                url:'profileUD.php',
 	                data:data,
 	                success:function(response){
-	                    console.log("success");
-			            var len = response.length;
-			            for(var i=0; i<len; i++){
-			                
-			                var fname = response[i].fname;
-			                var lname = response[i].lname;
-			                var dob = response[i].dob;
-			                var gen = response[i].gen;
-			                console.log(fname,lname,dob,gen,"ajax")
-			            }
+//	                       console.log(response);
+	                       var obj = JSON.parse(response);
+	                       console.log(obj);
+			               var fname = obj[0].fname;
+			               var lname = obj[0].lname;
+			               var dob = obj[0].dob;
+			               var gen = obj[0].gen;
+			               console.log(fname,lname,dob,gen,"ajax");
+			               document.getElementById('fname').value = fname;
+			               document.getElementById('lname').value = lname;
+			               document.getElementById('datefield').value = dob;
+			               document.getElementById('gen').selectedIndex = gen;
+			               $('#message1').html("Profile Updated successfully").css('color','green'); 
 	                   }
 	            }); 
 	       
