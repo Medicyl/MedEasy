@@ -50,8 +50,38 @@ if($_POST['update'] == 1){
 
 			    echo json_encode($return_arr);
 	}
-else if($_POST['update'] == 0){
-	echo 'In delete';
+else if($_POST['update'] == 2){
+			$email = $_POST['email'];
+			$oldp = $_POST['oldp'];
+			$newp = $_POST['newp'];
+
+			$query = $link->query("SELECT * FROM users where u_mail='".$email."'");
+			$rowCount = $query->num_rows;
+			if($rowCount > 0){
+			        
+					        while($row = $query->fetch_assoc()){ 
+					            
+							    $oldpass = $row['u_password'];
+					        }
+					        if(password_verify($oldp,$oldpass)){
+								$newpass=password_hash($newp,PASSWORD_DEFAULT,['cost' => 15]);					        	
+								$query1 = $link->query("UPDATE users SET u_password='$newpass' WHERE u_mail='$email'");
+
+								echo 'Password changed successfully!';       	
+					        }
+					        else{
+					        	echo 'Incorrect Old password';
+					        }
+				}
+		    else{
+		    	echo "Something went wrong! Contact Us";
+		    }			
+			//$query1 = $link->query("UPDATE users SET u_fname='$fname',u_lname='$lname',u_birth='$dob',u_gender='$gen' WHERE u_mail='$email'");
+
+            // if(!$query1 ) {
+            //    die('Could not change data: ' . mysql_error());
+            // }
+            // echo "Change Password data successfully";			
 }
 else{
 	echo 'Wrong';
