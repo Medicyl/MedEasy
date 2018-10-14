@@ -135,6 +135,11 @@ input {
     z-index: 9999;
 }
 </style>
+  <nav>
+    <?php
+    include('navbar.php');
+    ?>
+  </nav>
 <body>
 	<div class="container-fluid">
 		<div class="row">

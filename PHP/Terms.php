@@ -23,6 +23,11 @@
     }
 
   </style>
+    <nav>
+    <?php
+    include('navbar.php');
+    ?>
+  </nav>
   <body>
     <div class="container">
       <div class="row">

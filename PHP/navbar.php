@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ -->  <script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
 
   <link rel="stylesheet" type="text/css" href="../CSS/navbar.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -183,15 +184,15 @@
                 <li><a href="../PHP/index.php">Home</a></li>
                   
                   
-                <li><a href="../HTML/About.html"  >About Us</a></li>
-                <li><a href="../HTML/contact.html" >Contact Us</a></li>
+                <li><a href="../PHP/About.php"  >About Us</a></li>
+                <li><a href="../PHP/contact.php" >Contact Us</a></li>
                 <li><a href="../PHP/shop.php">Shop</a></li>
 
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" >Pages<i class="fa fa-angle-down ml-5"></i></a>
                   <ul class="dropdown-menu dropdown-menu-left">
-                    <li><a href="../HTML/FAQ.html">FAQ</a></li>
-                    <li><a href="../HTML/Terms.html">Terms & Conditions</a></li>
+                    <li><a href="../PHP/FAQ.php">FAQ</a></li>
+                    <li><a href="../PHP/Terms.php">Terms & Conditions</a></li>
                   </ul>
                 </li>
 
