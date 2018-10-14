@@ -24,6 +24,7 @@
 								$_SESSION['mail']=$result['u_mail'];
 							    $_SESSION['phone']=$result['u_phone'];
 								$_SESSION['birth']=$result['u_birth'];
+								$_SESSION['gen']=0;
 								
 								header("location:../HTML/admin.html?signin=success");
 					}				
@@ -36,6 +37,7 @@
 							$_SESSION['mail']=$result['u_mail'];
 						    $_SESSION['phone']=$result['u_phone'];
 							$_SESSION['birth']=$result['u_birth'];
+							$_SESSION['gen']=0;
 							
 							header("location:../PHP/index.php?signin=success");
 				}

@@ -22,7 +22,7 @@
 			</div>		
 			<div class="col-md-5 col-sm-10">
 				
-				<form class="form" >
+				<form class="form" action="../PHP/delete.php" method="POST">
 				  <div class="form-group">
 				  	<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" >
 				  </div>
@@ -52,9 +52,13 @@
 				    <input type="email" class="form-control" id="email" placeholder="Enter email"	required="True" value="<?php echo $_SESSION['mail']; ?>" readonly>
 				  </div>
 				  <div class="but">
-				  	<button type="button" id="butt" name="butt" class="btn but1" >Submit</button>
+				  	<button type="button" id="butt" name="butt" class="btn but1" >Update Profile</button>
 				  	<button type="button" class="btn but1" data-toggle="modal" data-target="#exampleModal">Change Password</button>
-					</div>
+				</div>
+				<br>
+				  	<div class="but">
+				  	<button type="submit" id="butt1" name="butt1" class="btn but1" >Delete Account</button>
+				  </div>
 				</form>
 			</div>
 			<div class="col">	
@@ -194,6 +198,8 @@ $(document).ready(function(){
 	            }); 
 	       
 	    });
+
+	    // Change Password 
  	
 	});
 </script>
