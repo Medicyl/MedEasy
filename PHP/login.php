@@ -12,9 +12,9 @@
 				$sql=mysqli_query($conn,"SELECT * FROM users where u_mail='".$email."'");
 	
 				$result = mysqli_fetch_assoc($sql);
-				$json = json_encode($result);
-				echo $json;
-				echo $result['u_password']." ";
+				// $json = json_encode($result);
+				// echo $json;
+				// echo $result['u_password']." ";
 
 				if(strcmp($email,'admin@medeasy.com')==0){
 					if(password_verify($password,$result['u_password'])){

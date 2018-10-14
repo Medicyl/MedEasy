@@ -80,7 +80,7 @@
 	      	<form class="form">
 			  <div class="form-group">
 			    <label for="OldPassword">Old Password</label>
-			    <input type="password" class="form-control" placeholder="Old Password"	required="True" >
+			    <input type="password" class="form-control" id="OldPassword" placeholder="Old Password"	required="True" >
 			  </div>
 			  <div class="form-group">
 			    <label for="NewPassword">New Password</label>
@@ -94,7 +94,7 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="submit" id="but1" class="btn but1" >Save changes</button>
+	        <button type="button" id="but11" name="but11" class="btn but1" >Save changes</button>
 	      </div>
 	      </form>
 	    </div>
@@ -117,10 +117,10 @@
 	$('#password, #confirm_password').on('keyup', function () {
 	  if ($('#password').val() == $('#confirm_password').val() && $('#password').val().length > 7 && $('#confirm_password').val().length > 7) {
 	    $('#message').html('Matching').css('color', 'green');
-		$(":submit").removeAttr("disabled");
+		$(":button").removeAttr("disabled");
 	  } else {
 	    $('#message').html('Not Matching , length must be greater than 8 character').css('color', 'red');
-		$(":submit").attr("disabled", true);}
+		$(":button").attr("disabled", true);}
 	});
 // Matching alphabets,character size,integer and providing useful messages
 	$(".alpha-only").on("input", function(){
@@ -200,7 +200,35 @@ $(document).ready(function(){
 	    });
 
 	    // Change Password 
- 	
+	    $('#but11').on('click',function(){
+		  var email = document.getElementById('email').value;
+		  var oldp = document.getElementById('OldPassword').value;
+		  var newp = document.getElementById('password').value;
+		  var update = 2
+		  var data = {'email' : email , 'oldp' : oldp ,'newp' : newp, 'update' : update};
+		  console.log(data);
+	            $.ajax({
+	                type:'POST',
+	                url:'profileUD.php',
+	                data:data,
+	                success:function(response){
+	                       console.log(response);
+	                 //       var obj = JSON.parse(response);
+	                 //       console.log(obj);
+			               // var fname = obj[0].fname;
+			               // var lname = obj[0].lname;
+			               // var dob = obj[0].dob;
+			               // var gen = obj[0].gen;
+			               // console.log(fname,lname,dob,gen,"ajax");
+			               // document.getElementById('fname').value = fname;
+			               // document.getElementById('lname').value = lname;
+			               // document.getElementById('datefield').value = dob;
+			               // document.getElementById('gen').selectedIndex = gen;
+			                $('#message').html(response).css('color','green'); 
+	                   }
+	            }); 
+	       
+	    }); 	
 	});
 </script>
 
