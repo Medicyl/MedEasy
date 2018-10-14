@@ -3,23 +3,28 @@
  ?>
 <!doctype html>
 <html lang="en">
+
   <head>
     <title>MedEasy</title>
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+ -->
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../CSS/shop.css">
 
   </head>
-
+  <nav>
+    <?php
+    include('navbar.php');
+    ?>
+  </nav>
   <body>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -59,7 +64,7 @@
                          
             </div>
 
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -99,7 +104,7 @@
                          
             </div>
 
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -139,7 +144,7 @@
                          
             </div>
 
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -179,7 +184,7 @@
                          
             </div>
 
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -219,7 +224,7 @@
                          
             </div>
 
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -258,7 +263,7 @@
 
                          
             </div>
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -298,7 +303,7 @@
                          
             </div>
 
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
@@ -337,7 +342,7 @@
 
                          
             </div>
-            <div class="col m2 s4">
+            <div class="col-md-2 col-sm-4">
               
                     <div class="card">
                       <div class="card-image activator">
