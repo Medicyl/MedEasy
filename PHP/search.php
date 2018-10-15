@@ -193,6 +193,10 @@
 	 ?>
 	 	</div>
 	</div>
+	<?php
+    include('footer.php');
+    ?>
+  </nav>
 	</body>
 
 	</html>

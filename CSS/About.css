@@ -4,13 +4,13 @@
 }
 
 body {
- background:rgba(74, 189, 172,1) !important; 
+ background:#617375 !important; 
  text-align: center;
 }
 
 h1 {
   margin-top: 20px;
-  color: whitesmoke;
+  color: white;
   font-family:sans-serif;
   font-size: 46px;
   font-weight: 900;
@@ -20,7 +20,7 @@ h1 {
 
 p {
   padding: 15px;
-  color: whitesmoke;
+  color: white;
   font-family: OpenSans;
   font-size: 18px;
   font-weight: 300;

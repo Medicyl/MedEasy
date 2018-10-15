@@ -19,7 +19,7 @@
       font-size: 18px;
     }
     body{
-     background:rgba(74, 189, 172,1) !important; 
+     background:#617375 !important; 
     }
 
   </style>
@@ -32,8 +32,8 @@
     <div class="container">
       <div class="row">
         <div class="col m12">
-          <h1 align="center" style="color: #fff;">Terms & Condition</h1>
-              <h3 class="a">1. Creating an Account </h3>
+          <h1 align="center" style="color: #000;">Terms & Condition</h1>
+              <h3 class="a">1. Creating an Account </h3><hr>
                 <p class="b">
                 1.1 To use certain features of the Website (e.g., ordering Products, posting rating/reviews, receiving Netmeds enewsletters), you must set up an account with Netmeds.com ("Netmeds Account") and provide certain information about yourself as prompted by the Customer Information form, including, your name, gender, email address, account password, mobile phone number and billing/shipping address. All of your registration information is protected by our Privacy Policy.
                 </p>
@@ -51,7 +51,7 @@
                 </p>
                 <h3 class="a">
                 2. Privacy Policy
-                </h3>
+                </h3><hr>
                 <p class="b">
                 2.1 Your personally identifiable information will be used in accordance with our Privacy Policy. To understand our practices, as to how we collect, use and disclose your personally identifiable information, please refer our Privacy Policy, which also governs your visit to Netmeds.com.
                 </p>
@@ -60,13 +60,17 @@
                 </p>
                 <h3 class="a">
                 3. Security Policy
-                </h3>
+                </h3><hr>
                 <p class="b">
                 All your transactions are 100% secure when you place an order online at Netmeds.com. Your personal information is encrypted by using 256-bit Secure Sockets Layer (SSL) encryption technology before being sent over the Internet, which ensures the privacy and high level of security of all your information.
                 </p>
         </div>
       </div>
-    </div>
+    </div><br>
+    <?php
+    include('footer.php');
+    ?>
+  </nav>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

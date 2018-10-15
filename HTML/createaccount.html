@@ -8,10 +8,10 @@
     <!-- Bootstrap CSS -->
   <link rel="stylesheet" type="text/css" href="../CSS/signin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <title>Create MedEasy Account</title>
   </head>
-  <body>
+  <body style="background:#4abdac">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="sign">
-          <p align="center">MedEasy.in</p>
+          <a href="../php/index.php"  style="text-decoration:none"><p align="center" class="medeasy-name">MEDEASY</p></a>
           <div class="form-content">
             <span style="font-weight: 500;font-size: 24px;">Create Your Account</span>
             <form class="form-group" method="POST" action="../PHP/signup.php">
@@ -40,16 +40,16 @@
               <input type="Date" name="ubdate"><br><br>
               <span style="font-weight: 500;">Password</span>
               <br> 
-              <input type="Password" name="password" required><br><br>
-              <input align="center" value="submit" type="submit" name="submit" style="background:transparent;border: 1px solid #4abdac; color:#0056b3;cursor: pointer; border-radius: 3px; width: 90%; text-align: center;"></input>
-            </form><br>
+              <input type="password" name="password" required><br><br>
+              <input align="center" value="submit" type="submit" name="submit"class="sign-btn">
+              <br><br></form>
+            <a href="signin.html" style="text-decoration: none; color: #fc4a1a">Already Have Account? Sign In </a>
             
           </div>
         </div>
         <br>
 
-        <hr style="font-weight: bold;"><br>
-        <a href="signin.html" style="text-decoration: none; padding-bottom: 50px;margin-left: 60px;" >Already Have Account? Sign In </a>
+        
       </div>
         <div class="col">
           
