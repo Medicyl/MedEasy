@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Medeasy</title>
+
+    <link rel="stylesheet" type="text/css" href="../assests/product.css">
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <style>
+        body{
+    background:rgba(74, 189, 172,1) !important; 
+    font-family:'Arial'sans-serif;
+    font-size:62.5%;
+  }
+  h1{
+    font-weight:500;
+  }
+  img{
+    max-width:100%;
+  }
+  #wrap{
+    width:80%;
+    margin:0 auto;
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  #product_layout_1{
+    margin-top:30px;
+  }
+  #product_layout_1 .top{
+    display:block;
+    width:100%;
+    margin-bottom:30px;
+  }
+  #product_layout_1 .bottom{
+    display:block;
+    width:100%;
+    padding-top:30px;
+    clear:both;
+  }
+  #product_layout_1 .product_images{
+    width:30%;
+    max-width:320px;
+    float:left;
+  }
+  #product_layout_1 .product_info{
+    width:66%;
+    float:left;
+    margin-left:4%;
+  }
+  #product_layout_1 .product_images .product_image_1{
+     width:100%;
+     border:2px solid lightgray;
+     border-radius:3px;
+  }
+  #product_layout_1 .product_images .product_image_small{
+    width:100%;
+    margin-top:15px;
+  }
+  #product_layout_1 .product_images .product_image_small .product_image_2{
+    width:30%;
+    border:1px solid lightgray;
+    float:left;
+    margin-right:4%;
+    box-sizing:border-box;
+  }
+  #product_layout_1 .product_images .product_image_small .product_image_3{
+    width:30%;
+    border:1px solid lightgray;
+    float:left;
+    margin-right:4%;
+    box-sizing:border-box;
+  }
+  #product_layout_1 .product_images .product_image_small .product_image_4{
+    width:30%;
+    border:1px solid lightgray;
+    float:left;
+  }
+  #product_layout_1 .product_info h1{
+    font-size:3.6em;
+    line-height:.8;
+  }
+  #product_layout_1 .product_info .price{
+    margin-top:-40px;
+  }
+  #product_layout_1 .product_info .original_price{
+    color:lightgray;
+    font-size:2.8em;
+    text-decoration:line-through;
+    width:20%;
+    display:inline-block;
+  }
+  #product_layout_1 .product_info .sale_price{
+    color:#b30000;
+    font-size:3.2em;
+    display:inline-block;
+    width:30%;
+  }
+  #product_layout_1 .product_info .rating{
+    margin-top:-20px;
+    color:goldenrod;
+  }
+  #product_layout_1 .product_info .product_description{
+   font-size:2em;
+  }
+  #product_layout_1 .product_info .related_info{
+    color:#a6a6a6;
+  }
+  #product_layout_1 .product_info .related_info span{
+    margin-right:5%;
+  }
+  #product_layout_1 .product_info .options{
+    margin-top:30px;
+  }
+  #product_layout_1 .product_info .buying_options{
+    width:45%;
+    float:left;
+  }
+  #product_layout_1 .product_info .buying{
+    width:45%;
+    float:left;
+    margin-left:10%;
+  }
+  #product_layout_1 .product_info .buying_options .select{
+    width: 100%;
+    max-width:300px;
+    height: 40px;
+    overflow: hidden;
+    background: url('https://i.imgur.com/10e9Roz.png') no-repeat right #FFF;
+    border: 1px solid #ccc;
+    border-radius:3px;
+    margin-top:15px;  
+  }
+  #product_layout_1 .product_info .buying_options select{
+    background: transparent;
+    display:block;
+    width: 268px;
+    padding: 5px;
+    font-size: 2em;
+    line-height: 1;
+    border: 0;
+    border-radius:0;
+    height: 40px;
+    -webkit-appearance: none;
+  }
+  #product_layout_1 .product_info .buying .quantity{
+    font-size:2em;
+    margin-top:15px;
+    width:100%;
+    display:block;
+  }
+  #product_layout_1 .product_info .buying .quantity [type="text"]{
+    width:70px;
+    height:40px;
+    border:1px solid #ccc;
+    border-radius:3px;
+    padding:10px;
+    box-sizing:border-box;
+    font-size:1em;
+  }
+  #product_layout_1 .product_info .buying .cart{
+    margin-top:25px;
+    width:100%;
+    float:left;
+    margin-bottom:20px;
+  }
+  #product_layout_1 .product_info .buying .cart a.add{
+    font-size:2em;
+    color:#FFF;
+    background:#00a900;
+    text-decoration:none;
+    padding:10px 20px;
+    height:40px;
+    border-radius:3px;
+    margin-left:10px;
+  }
+  #product_layout_1 .product_info .social{
+    font-size:1.4em;
+    line-height:1.2;
+    margin-bottom:15px;
+    width:60%;
+    display:block;
+    margin:15px 0px;
+  }
+  #product_layout_1 .product_info .social .share{
+    margin-top:-5px;
+    margin-bottom:15px;
+  }
+  #product_layout_1 .product_info .buttons{
+    margin-top:20px;
+    margin-left:10px;
+    display:inline-block;
+    width:30%;
+  }
+  #product_layout_1 .reviews{
+    width:30%;
+    float:left;
+    border:2px solid #aaa;
+    border-radius:3px;
+    margin-bottom:30px;
+    box-sizing:border-box;
+    max-width:320px;
+  }
+  #product_layout_1 .reviews h2{
+   font-weight:500;
+   font-size:2.4em;
+  }
+  #product_layout_1 .reviews .head{
+    background:#ccc;
+    text-align:center;
+    padding:5px;  
+  }
+  #product_layout_1 .reviews .content{
+    background:#FFF;
+    padding-top:15px;
+    padding-left:2em;
+    padding-right:2em;
+    padding-bottom:15px;
+  }
+  #product_layout_1 .reviews .content .name{
+    font-size:1.8em;
+  }
+  #product_layout_1 .reviews .content .stars{
+    color:goldenrod;
+    margin-left:15px;
+  }
+  #product_layout_1 .reviews .content .review_text{
+    margin-top:10px;
+    font-size:1.2em;
+  }
+  #product_layout_1 .reviews .content .fullReview a{
+   display:block;
+   font-size:1.2em;
+   text-align:center;
+   color:#006bff;
+   text-decoration:none;
+  }
+  #product_layout_1 .reviews .content .writeReview a{
+   display:block;
+   font-size:1.4em;
+   text-align:center;
+   color:#006bff;
+   text-decoration:none;
+  }
+  #product_layout_1 .related{
+    width:66%;
+    float:left;
+    display:block;
+    margin-left:4%;
+    border:2px solid #aaa;
+    border-radius:3px;
+    box-sizing:border-box;
+  }
+  #product_layout_1 .related .head{
+    background:#ccc;
+    padding:.3em;
+  }
+  #product_layout_1 .related .head h2{
+   text-align:center;
+   font-weight:500;
+   font-size:2.4em;
+  }
+  #product_layout_1 .related .content{
+    background:#FFF;
+  }
+  #product_layout_1 .related .relatedProducts{
+    columns:3;
+  }
+  #product_layout_1 .related .products{
+    text-align:center;
+    width:25%;
+    float:left;
+    margin-left:6.25%;
+    box-sizing:border-box;
+  }
+  #product_layout_1 .related .products .title{
+    font-size:1.4em;
+    line-height:1;
+    min-height:24px;
+  }
+  #product_layout_1 .related .products .image img{
+    border:2px solid #ccc;
+    margin-top:-5px;
+    cursor:pointer;
+  }
+  #product_layout_1 .related .products .price{
+    color:#b30000;
+    font-size:2.0em;
+    margin-top:-2px;
+  }
+  @media (max-width:500px){
+    #product_layout_1 .product_images,#product_layout_1 .product_info,#product_layout_1 .reviews,#product_layout_1 .related,#product_layout_1 .product_info .buying,#product_layout_1 .product_info .buying_options, #product_layout_1 .product_info .social{width:100%; margin-left:0;margin-right:0} 
+  }
+  .product--size {
+    margin: 20px 0;
+  }
+  .product--size span {
+    display: inline-block;
+    width: 35px;
+    border: 1px solid #999;
+    border-radius: 4px 4px;
+    text-align: center;
+    padding: 1px 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .product--size span.active {
+    color: #fff;
+    background: #008080;
+  }
+    </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="product_layout_1">
+      <div class="top">
+      <div class="product_images">
+	        <div class="product_image_1">
+	          <img src="https://i-cf3.gskstatic.com/content/dam/cf-consumer-healthcare/panadol/en_in/adult/productshots/crocinadvance/455x455.jpg?auto=format" class="display-img"/>
+	        </div>
+	        <div class="product_image_small">
+	          <div class="product_image_2">
+	            <img src="https://i-cf3.gskstatic.com/content/dam/cf-consumer-healthcare/panadol/en_in/adult/productshots/crocinadvance/455x455.jpg?auto=format"/>
+	          </div>
+	                    <div class="product_image_3">
+	            <img src="https://www.practostatic.com/practopedia-images/res-750/7d15abc42ec9af322412ee19a2ee0938ad41fd531.jpg"/>
+	          </div>
+	                    <div class="product_image_4">
+	            <img src="https://5.imimg.com/data5/VW/SR/MY-17376909/crocin-tablet-500x500.jpg"/>
+	          </div>
+	        </div>
+        </div>
+        <div class="product_info">
+          <h1><%= product["name"] %></h1>
+          
+          <div class="price">
+          <h2 class="original_price">₹ <%= product["cost"] %></h2>
+         
+          </div>
+          <div class="rating">
+            <i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star fa-3x"></i><i class="fa fa-star-half-o fa-3x"></i><i class="fa fa-star-o fa-3x"></i>
+          </div>
+          <div class="product_description">
+          <p>Oh yes sir. Well, they're your parents, you must know them. What are their common interests, what do they like to do together? You're George McFly. Nothing, nothing, nothing, look tell her destiny has brought you together, tell her that she's the most beautiful you have ever seen. Girls like that stuff. What, what are you doing George? Lorraine, are you up there?</p>
+          <p>My insurance, it's your car, your insurance should pay for it. Hey, I wanna know who's gonna pay for this? I spilled beer all over it when that car smashed into me. Who's gonna pay my cleaning bill? Radiation suit, of course, cause all of the fall out from the atomic wars. This is truly amazing, a portable television studio. No wonder your president has to be an actor, he's gotta look good on television. C'mon, he's not that bad. At least he's letting you borrow the car tomorrow night. Ohh, no. What do you mean you've seen this, it's brand new.</p>
+          </div>
+
+         <div class="options">
+         <div class="buying_options">
+         	<h3 align="center" style="color: #000;font-size: 25px"> Packaging Type </h3>
+         	<h2 align="center" style="color: #fff;font-size: 20px"> Strip </h2>
+          </div>
+          <div class="buying">
+                 <div class="quantity">
+                   <label for="quantity">QTY:</label>
+                   <input type="text" placeholder="">
+                 </div>
+                 <div class="cart">
+                   <a href="http://localhost:3000/user/cart/<%= product['_id'] %>" class="add">Add to Cart <i class="fa fa-shopping-cart fa-lg"></i></a>
+                 </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        <div class="bottom">
+        <div class="reviews">
+          <div class="head">
+            <h2>Reviews</h2>
+          </div>
+            <div class="content">
+              <span class="name">Marty McFly</span><span class="stars"><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star fa-2x"></i><i class="fa fa-star-half-o fa-2x"></i><i class="fa fa-star-o fa-2x"></i></span>
+              <p class="review_text">"Check out that four by four. That is hot. Someday, Jennifer, someday. Wouldn't it be great to take that truck up to the lake. Throw a couple of sleeping bags in the back. Whoa, wait, Doc. Here you go, lady. There's a quarter. Well, it will just happen. Like the way I met your father..."</p>
+              <p class="fullReview"><a href="#">View Full Review</a></p>
+              <span class="writeReview"><a href="#">Write your Own Review</a></span>
+            </div>
+          </div>
+          <div class="related">
+            <div class="head">
+              <h2>Related Products</h2>
+            </div>
+            <div class="content">
+              <div class="relatedProducts">
+                <div class="products">
+                  <h4 class="title">Disprin</h4>
+                  <div class="image">
+                    <img src="https://3.imimg.com/data3/BK/KR/MY-22875491/disprin-tablets-500x500.jpg"/>
+                  </div>
+                  <h4 class="price">₹ 34</h4>
+                </div>
+                <div class="products">
+                  <h4 class="title">Saradon</h4>
+                  <div class="image">
+                    <img src="https://5.imimg.com/data5/DC/FJ/MY-12931455/saridon-tablet-500x500.jpg"/>
+                  </div>
+                  <h4 class="price">₹ 45</h4>
+                </div>
+                <div class="products">
+                  <h4 class="title">Crocin 650</h4>
+                  <div class="image">
+                    <img src="https://i-cf3.gskstatic.com/content/dam/cf-consumer-healthcare/panadol/en_in/adult/productshots/crocinpainrelief/325x189.jpg?auto=format"/>
+                  </div>
+                  <h4 class="price">₹ 39</h4>
+                </div>
+              </div>
+            </div>
+     
+</body>
+</html>
+ <script type="text/javascript">
+ 	// Change active class on product sizes.
+
+var sizes = jQuery(".product--size").find("span");
+sizes.click(function() {
+  sizes.removeClass("active");
+  $(this).addClass("active");
+});
+
+// Change image on thumbnail click.
+var thumbs = $(".product_image_small").find("img");
+thumbs.click(function() {
+  var src = $(this).attr("src");
+  var dp = $(".display-img");
+  dp.attr("src", src);
+});
+ </script>

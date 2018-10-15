@@ -2,8 +2,9 @@ var session=require("express-session");
 var cookieParser=require("cookie-parser");
 var bparser=require("body-parser");
 var bcrypt=require("bcryptjs");
+var MongoStore=require("connect-mongo")(session);
 var Users=require('../models/users');
-
+var Cart=require("../models/orders").Cart;
 
 module.exports=function(app){
     app.use(cookieParser());
@@ -12,6 +13,10 @@ module.exports=function(app){
         secret:"sometext",
         resave:false,
         saveUninitialized: false,
+        store:new MongoStore({
+            url:'mongodb://localhost:27017/MedEasy',
+            autoRemove:false
+        })
     }));
     var sessionCheck=function(req,res,next){
         if(req.session.user && user.cookie.user_sid){
@@ -50,9 +55,16 @@ module.exports=function(app){
                         if(err) throw err;
                 
                         NewUser.password=hash;
-                        
+                       
                         NewUser.save(function(err){
-                            console.log(err);                                                
+                            if(err)
+                                console.log(err);                                                
+                        });
+                        // var CartObejct=new Cart({userId:NewUser["_id"]});
+                        var CartObject=new Cart({userId:NewUser["_id"]});
+                        CartObject.save(function(err){
+                            if (err)
+                                console.log(err);
                         });
                         req.session.user=NewUser;
                         console.log(req.session.user.first_name);

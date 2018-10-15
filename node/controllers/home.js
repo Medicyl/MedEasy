@@ -10,6 +10,7 @@ module.exports=function(app){
             res.render("home",{login:"no",name:null});
         }
     app.get("/details",function(req,res){
+        
         if(req.session.user){
             res.render("details",{user:req.session.user});
 
