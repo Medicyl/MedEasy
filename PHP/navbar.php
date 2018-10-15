@@ -115,9 +115,9 @@
           <select class="form-control input-lg" name="category">
               <option value="all">All Categories</option>
               <optgroup label="Health Care">
-                <option value="dettolantiseptic">Dettol Antiseptic</option>
-                <option value="moovointment">Moov Ointment</option>
-                <option value="zbalm">Zandu Balm</option>
+                <option value="dettol">Dettol Antiseptic</option>
+                <option value="moov">Moov Ointment</option>
+                <option value="zandu balm">Zandu Balm</option>
                 <option value="eno">Eno</option>
                 <option value="relispray">Relispray</option>
                 <option value="bandaid">Johnson & Johnson Band-Aid</option>

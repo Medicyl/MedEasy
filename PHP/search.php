@@ -27,7 +27,7 @@
 	  <?php
 
 			if(!empty($search_key)){
-					$sql=mysqli_query($conn,"SELECT * FROM product where p_name LIKE '".$search_key."'");
+					$sql=mysqli_query($conn,"SELECT * FROM product where p_name LIKE '%".$search_key."%'");
 					if(mysqli_num_rows($sql) == 0){
 							?>
 							<h1 align="center" style="color: #ff0000;">Oops ! We don't have <?php echo $search_key ?></h1>
@@ -43,7 +43,7 @@
 		                                    <div class="price">
 		                                    <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ <?php echo $row['p_price'] ?></a>
 		                                  </div>
-		                                    <img class="activator" src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
+		                                    <img class="activator" src="<?php echo $row['p_image'] ?>" style="max-width: 100%;">
 		                                
 		                                
 		                                      <ul class="add-item">
@@ -93,7 +93,7 @@
 		                                <div class="price">
 		                                <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ <?php echo $row['p_price'] ?></a>
 		                              </div>
-		                                <img class="activator" src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
+		                                <img class="activator" src="<?php echo $row['p_image'] ?>" style="max-width: 100%;">
 		                            
 		                            
 		                                  <ul class="add-item">
@@ -132,7 +132,7 @@
 									
 					}
 			else{
-					$sql=mysqli_query($conn,"SELECT * FROM product where p_name LIKE '".$category."'");
+					$sql=mysqli_query($conn,"SELECT * FROM product where p_name LIKE '%".$category."%'");
 					if(mysqli_num_rows($sql) == 0){
 							?>
 							<h1 align="center" style="color: #ff0000;">Oops ! We don't have <?php echo $category ?></h1>
@@ -148,7 +148,7 @@
 		                                    <div class="price">
 		                                    <a href="#" class="btn-floating btn-large btn-price waves-effect waves-light teal accent-4">₹ <?php echo $row['p_price'] ?></a>
 		                                  </div>
-		                                    <img class="activator" src="https://2.imimg.com/data2/GX/KQ/IMVENDOR-3111145/assets-images-en-us-products-primaryproductimg-img_p_nf_cough_a-250x250.png" style="max-width: 100%;">
+		                                    <img class="activator" src="<?php echo $row['p_image'] ?>" style="max-width: 100%;">
 		                                
 		                                
 		                                      <ul class="add-item">
