@@ -12,21 +12,33 @@
 				$sql=mysqli_query($conn,"SELECT * FROM users where u_mail='".$email."'");
 	
 				$result = mysqli_fetch_assoc($sql);
-				$json = json_encode($result);
-				echo $json;
-				echo $result['u_password']." ";
-				// // $result1 = password_verify($result['u_password'],$password);
-				// // echo $result1." ";
-				// echo password_hash($password,PASSWORD_DEFAULT,['cost' => 15]);
-				// echo strcmp($result['u_password'],password_hash($password,PASSWORD_DEFAULT,['cost' => 15]));
-				if(password_verify($password,$result['u_password'])){
+				// $json = json_encode($result);
+				// echo $json;
+				// echo $result['u_password']." ";
+
+				if(strcmp($email,'admin@medeasy.com')==0){
+					if(password_verify($password,$result['u_password'])){
+								$_SESSION['fname']=$result['u_fname'];
+								$_SESSION['lname']=$result['u_lname'];
+								$_SESSION['password']=$result['u_password'];
+								$_SESSION['mail']=$result['u_mail'];
+							    $_SESSION['phone']=$result['u_phone'];
+								$_SESSION['birth']=$result['u_birth'];
+								$_SESSION['gen']=0;
+								
+								header("location:../HTML/admin.html?signin=success");
+					}				
+
+				}
+				else if(password_verify($password,$result['u_password'])){
 							$_SESSION['fname']=$result['u_fname'];
 							$_SESSION['lname']=$result['u_lname'];
 							$_SESSION['password']=$result['u_password'];
 							$_SESSION['mail']=$result['u_mail'];
 						    $_SESSION['phone']=$result['u_phone'];
 							$_SESSION['birth']=$result['u_birth'];
-							$_SESSION['logout'] = 1;
+							$_SESSION['gen']=0;
+							
 							header("location:../PHP/index.php?signin=success");
 				}
 				else{

@@ -8,11 +8,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../CSS/EditProfile.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" ></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<title>Edit Profile</title>
 </head>
+  <nav>
+    <?php
+    include('navbar.php');
+    ?>
+  </nav>
 <body>
 	<div class="filtr"></div>
 	<div class="container">
@@ -22,7 +27,7 @@
 			</div>		
 			<div class="col-md-5 col-sm-10">
 				
-				<form class="form" >
+				<form class="form" action="../PHP/delete.php" method="POST">
 				  <div class="form-group">
 				  	<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" >
 				  </div>
@@ -41,19 +46,23 @@
 				  </div>
 				  <div class="form-group">
 				    <label for="gender">Gender</label>
-				    <select class="form-control">
-				    	<option name="Male">Male</option>
-				    	<option name="Female">Female</option>
-				    	<option name="Other">Other</option>
+				    <select class="form-control" id="gen" >
+				    	<option name="Male" <?=$_SESSION['gen'] == 0 ? ' selected="selected"' : '';?>>Male</option>
+				    	<option name="Female" <?=$_SESSION['gen'] == 1 ? ' selected="selected"' : '';?>>Female</option>
+				    	<option name="Other" <?=$_SESSION['gen'] == 2 ? ' selected="selected"' : '';?>>Other</option>
 				    </select>
 				  </div>
 				  <div class="form-group">
 				    <label for="Email">Email address</label>
-				    <input type="email" class="form-control" id="email" placeholder="Enter email"	required="True" value="<?php echo $_SESSION['mail']; ?>">
+				    <input type="email" class="form-control" id="email" placeholder="Enter email"	required="True" value="<?php echo $_SESSION['mail']; ?>" readonly>
 				  </div>
 				  <div class="but">
-				  	<button type="submit" class="btn but1" >Submit</button>
+				  	<button type="button" id="butt" name="butt" class="btn but1" >Update Profile</button>
 				  	<button type="button" class="btn but1" data-toggle="modal" data-target="#exampleModal">Change Password</button>
+				</div>
+				<br>
+				  	<div class="but">
+				  	<button type="submit" id="butt1" name="butt1" class="btn but1" >Delete Account</button>
 				  </div>
 				</form>
 			</div>
@@ -76,7 +85,7 @@
 	      	<form class="form">
 			  <div class="form-group">
 			    <label for="OldPassword">Old Password</label>
-			    <input type="password" class="form-control" placeholder="Old Password"	required="True" >
+			    <input type="password" class="form-control" id="OldPassword" placeholder="Old Password"	required="True" >
 			  </div>
 			  <div class="form-group">
 			    <label for="NewPassword">New Password</label>
@@ -90,7 +99,7 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	        <button type="submit" id="but1" class="btn but1" >Save changes</button>
+	        <button type="button" id="but11" name="but11" class="btn but1" >Save changes</button>
 	      </div>
 	      </form>
 	    </div>
@@ -113,10 +122,10 @@
 	$('#password, #confirm_password').on('keyup', function () {
 	  if ($('#password').val() == $('#confirm_password').val() && $('#password').val().length > 7 && $('#confirm_password').val().length > 7) {
 	    $('#message').html('Matching').css('color', 'green');
-		$(":submit").removeAttr("disabled");
+		$(":button").removeAttr("disabled");
 	  } else {
 	    $('#message').html('Not Matching , length must be greater than 8 character').css('color', 'red');
-		$(":submit").attr("disabled", true);}
+		$(":button").attr("disabled", true);}
 	});
 // Matching alphabets,character size,integer and providing useful messages
 	$(".alpha-only").on("input", function(){
@@ -136,18 +145,95 @@
 			$('#message1').html('');		
 		}
 	});
-//For date max date=today
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; 
-var yyyy = today.getFullYear();
- if(dd<10){
-        dd='0'+dd
-    } 
-    if(mm<10){
-        mm='0'+mm
-    } 
+	//For date max date=today
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; 
+	var yyyy = today.getFullYear();
+	 if(dd<10){
+	        dd='0'+dd
+	    } 
+	    if(mm<10){
+	        mm='0'+mm
+	    } 
 
-today = yyyy+'-'+mm+'-'+dd;
-document.getElementById("datefield").setAttribute("max", today);
+	today = yyyy+'-'+mm+'-'+dd;
+	document.getElementById("datefield").setAttribute("max", today);
+
+
+$(document).ready(function(){
+	    $('#butt').on('click',function(){
+		  var email = document.getElementById('email').value;
+		  var fname = document.getElementById('fname').value;
+		  var lname = document.getElementById('lname').value;
+		  var dob = document.getElementById('datefield').value;
+		  var gen = document.getElementById('gen').value;
+		  if(gen == 'Male'){
+		  	gen=0
+		  }
+		  else if(gen == 'Female'){
+		  	gen=1
+		  }
+		  else{
+		  	gen=2
+		  }
+		  
+		  var update = 1
+		  var data = {'email' : email , 'fname' : fname ,'lname' : lname,'dob' : dob, 'gen' : gen , 'update' : update};
+		  
+	            $.ajax({
+	                type:'POST',
+	                url:'profileUD.php',
+	                data:data,
+	                success:function(response){
+//	                       console.log(response);
+	                       var obj = JSON.parse(response);
+	                       console.log(obj);
+			               var fname = obj[0].fname;
+			               var lname = obj[0].lname;
+			               var dob = obj[0].dob;
+			               var gen = obj[0].gen;
+			               console.log(fname,lname,dob,gen,"ajax");
+			               document.getElementById('fname').value = fname;
+			               document.getElementById('lname').value = lname;
+			               document.getElementById('datefield').value = dob;
+			               document.getElementById('gen').selectedIndex = gen;
+			               $('#message1').html("Profile Updated successfully").css('color','green'); 
+	                   }
+	            }); 
+	       
+	    });
+
+	    // Change Password 
+	    $('#but11').on('click',function(){
+		  var email = document.getElementById('email').value;
+		  var oldp = document.getElementById('OldPassword').value;
+		  var newp = document.getElementById('password').value;
+		  var update = 2
+		  var data = {'email' : email , 'oldp' : oldp ,'newp' : newp, 'update' : update};
+		  console.log(data);
+	            $.ajax({
+	                type:'POST',
+	                url:'profileUD.php',
+	                data:data,
+	                success:function(response){
+	                       console.log(response);
+	                 //       var obj = JSON.parse(response);
+	                 //       console.log(obj);
+			               // var fname = obj[0].fname;
+			               // var lname = obj[0].lname;
+			               // var dob = obj[0].dob;
+			               // var gen = obj[0].gen;
+			               // console.log(fname,lname,dob,gen,"ajax");
+			               // document.getElementById('fname').value = fname;
+			               // document.getElementById('lname').value = lname;
+			               // document.getElementById('datefield').value = dob;
+			               // document.getElementById('gen').selectedIndex = gen;
+			                $('#message').html(response).css('color','green'); 
+	                   }
+	            }); 
+	       
+	    }); 	
+	});
 </script>
+

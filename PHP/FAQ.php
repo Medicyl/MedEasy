@@ -7,6 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/FAQ.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
+  <nav>
+    <?php
+    include('navbar.php');
+    ?>
+  </nav>
 <body>
   <h1 align="center">Frequently Asked Questions</h1>
 	<main>
