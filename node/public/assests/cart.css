@@ -1,0 +1,25 @@
+.card{
+    height:100%;
+}
+
+.product{
+    height:100px;
+    width: 100%;
+}
+
+.cartcol{
+    height:100%;
+}
+
+.cartcol .row{
+    height:100%;
+}
+
+.product img{
+    height:70px;
+    width:70px;
+}
+
+.product-removal{
+    padding: 30px 0px;
+}

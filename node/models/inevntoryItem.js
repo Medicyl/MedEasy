@@ -1,7 +1,7 @@
 var mongoose=require("mongoose");
 
 var inventoryItemSchema=new mongoose.Schema({
-    parentItem:{type:mongoose.Schema.Types.ObjectId,ref:"ParentItem"},
+    parentItems:{type:mongoose.Schema.Types.ObjectId,ref:"ParentItem"},
     inventoryItemId:{type:String},
     mod:{type:Date},
     expiry:{type:String},
