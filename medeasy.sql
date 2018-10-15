@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 13, 2018 at 11:43 AM
+-- Generation Time: Oct 15, 2018 at 07:16 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -36,17 +36,23 @@ CREATE TABLE `product` (
   `p_description` varchar(1000) NOT NULL,
   `p_quantity` int(11) NOT NULL,
   `p_type` varchar(20) NOT NULL,
-  `p_presc` int(11) NOT NULL
+  `p_presc` int(11) NOT NULL,
+  `p_price` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`p_id`, `p_name`, `p_alt_name`, `p_mfg_date`, `p_exp_date`, `p_hsn_code`, `p_description`, `p_quantity`, `p_type`, `p_presc`) VALUES
-(1, 'Crocin', 'cr', '2018-08-01', '2020-08-02', '123', 'Paracetamol', 5, 'tablet', 0),
-(2, 'Saridon', 'sar', '2018-08-01', '2020-07-05', '1234', 'Headache', 10, 'tablet', 0),
-(3, 'CoughQ', 'cog', '2017-08-02', '2020-08-02', '12345', 'Cold', 14, 'Liquid', 1);
+INSERT INTO `product` (`p_id`, `p_name`, `p_alt_name`, `p_mfg_date`, `p_exp_date`, `p_hsn_code`, `p_description`, `p_quantity`, `p_type`, `p_presc`, `p_price`) VALUES
+(1, 'Crocin', 'cr', '2018-08-01', '2020-08-02', '123', 'Paracetamol', 5, 'tablet', 0, 20),
+(2, 'Saridon', 'sar', '2018-08-01', '2020-07-05', '1234', 'Headache', 10, 'tablet', 0, 10),
+(3, 'CoughQ', 'cog', '2017-08-02', '2020-08-02', '12345', 'Cold', 14, 'Liquid', 1, 100),
+(4, 'CoughQ', 'cq', '2018-10-11', '2018-10-27', '486486', 'Coughq is good for cold.', 100, 'tablet', 0, 30),
+(5, 'dettol', 'dettolantiseptic', '2018-10-12', '2018-10-31', '4165', 'Antiseptic', 789, 'liquid', 0, 50),
+(6, 'dettol', 'dettolantiseptic', '2018-10-12', '2018-10-31', '4165', 'Antiseptic', 789, 'liquid', 1, 45),
+(7, 'moov', 'moovointment', '2018-10-02', '2018-10-19', '5145', 'Ointment', 54, 'cream', 0, 20),
+(8, 'zandu balm', 'zbalm', '2018-10-23', '2018-10-31', '153', 'Balm', 54, 'cream', 0, 30);
 
 -- --------------------------------------------------------
 
@@ -79,8 +85,7 @@ INSERT INTO `users` (`u_id`, `u_fname`, `u_lname`, `u_type`, `u_mail`, `u_phone`
 (4, 'Sharvai', '', 0, 'sharvai.sp@somaiya.edu', 103, 'sharvai', '2018-08-14 10:08:14', '1998-04-22', 'none', 0),
 (5, 'Amit', '', 0, 'amit.bhujbal@somaiya.edu', 104, 'amit', '2018-08-14 10:09:11', '1998-02-10', 'none', 0),
 (16, 'A', 'b', 0, 'a@gmail.com', 464151, '$2y$15$kilfqkh9cTUS2VykS5mwY.wyaM8qDFc5MMWoSA8xp7e0G7uFcMnH6', '2018-09-17 18:11:56', '2014-02-02', NULL, 0),
-(17, 'echo', 'echo', 0, 'echo@gmail.com', 123456789, '$2y$15$MO.q8VqcZWfSbJar06Ze6uY7TssoGK9dZqZI1jckkaMh5eHOYMuVK', '2018-10-13 08:59:20', '2014-11-30', NULL, 0),
-(18, 'becho', 'be', 0, 'becho@gmail.com', 123456789, '$2y$15$rOj/WAH.O6RjxiDxKbWFCuR.ANr9nHwHS80aAllXDh/16YALEqzJC', '2018-10-13 09:05:47', '2015-10-30', NULL, 0),
+(18, 'bechohsdj', 'bejkbfkrbfgkjrb', 0, 'becho@gmail.com', 123456789, '$2y$15$oIbpI4EyBbjYYgRe65YKPuZLOoBfOQgPaqrH2wQecSZOVfuuhjrGW', '2018-10-14 17:00:58', '2015-10-09', NULL, 1),
 (19, 'ADMIN', 'Medeasy', 0, 'admin@medeasy.com', 1111222233, '$2y$15$JQIRua.WCQ1Q2JiAFsSALOvLTlIe6pXtG71yRnFbQn8rf8lrJ3w0y', '2018-10-13 09:23:17', '2016-11-01', NULL, 0);
 
 -- --------------------------------------------------------
@@ -163,7 +168,7 @@ ALTER TABLE `user_med_rep`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `users`
 --
