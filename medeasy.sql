@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 15, 2018 at 07:16 PM
+-- Generation Time: Oct 15, 2018 at 07:46 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -37,22 +37,25 @@ CREATE TABLE `product` (
   `p_quantity` int(11) NOT NULL,
   `p_type` varchar(20) NOT NULL,
   `p_presc` int(11) NOT NULL,
-  `p_price` int(11) NOT NULL
+  `p_price` int(11) NOT NULL,
+  `p_image` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`p_id`, `p_name`, `p_alt_name`, `p_mfg_date`, `p_exp_date`, `p_hsn_code`, `p_description`, `p_quantity`, `p_type`, `p_presc`, `p_price`) VALUES
-(1, 'Crocin', 'cr', '2018-08-01', '2020-08-02', '123', 'Paracetamol', 5, 'tablet', 0, 20),
-(2, 'Saridon', 'sar', '2018-08-01', '2020-07-05', '1234', 'Headache', 10, 'tablet', 0, 10),
-(3, 'CoughQ', 'cog', '2017-08-02', '2020-08-02', '12345', 'Cold', 14, 'Liquid', 1, 100),
-(4, 'CoughQ', 'cq', '2018-10-11', '2018-10-27', '486486', 'Coughq is good for cold.', 100, 'tablet', 0, 30),
-(5, 'dettol', 'dettolantiseptic', '2018-10-12', '2018-10-31', '4165', 'Antiseptic', 789, 'liquid', 0, 50),
-(6, 'dettol', 'dettolantiseptic', '2018-10-12', '2018-10-31', '4165', 'Antiseptic', 789, 'liquid', 1, 45),
-(7, 'moov', 'moovointment', '2018-10-02', '2018-10-19', '5145', 'Ointment', 54, 'cream', 0, 20),
-(8, 'zandu balm', 'zbalm', '2018-10-23', '2018-10-31', '153', 'Balm', 54, 'cream', 0, 30);
+INSERT INTO `product` (`p_id`, `p_name`, `p_alt_name`, `p_mfg_date`, `p_exp_date`, `p_hsn_code`, `p_description`, `p_quantity`, `p_type`, `p_presc`, `p_price`, `p_image`) VALUES
+(1, 'Crocin', 'cr', '2018-08-01', '2020-08-02', '123', 'Paracetamol', 5, 'tablet', 0, 20, 'http://4.imimg.com/data4/TY/FX/GLADMIN-185846/crocin-advance-tablet-250x250.jpg'),
+(2, 'Saridon', 'sar', '2018-08-01', '2020-07-05', '1234', 'Headache', 10, 'tablet', 0, 10, 'https://5.imimg.com/data5/KX/QL/GLADMIN-2123920/saridon-250x250.jpg'),
+(3, 'CoughQ', 'cog', '2017-08-02', '2020-08-02', '12345', 'Cold', 14, 'Liquid', 1, 100, 'https://5.imimg.com/data5/LQ/DO/MY-8336070/zyrocold-cough-syrup-250x250.jpg'),
+(4, 'CoughQ', 'cq', '2018-10-11', '2018-10-27', '486486', 'Coughq is good for cold.', 100, 'tablet', 0, 30, 'https://3.imimg.com/data3/GU/LG/MY-7821106/azitro-500mg-tablet-250x250.jpg'),
+(5, 'dettol', 'dettolantiseptic', '2018-10-12', '2018-10-31', '4165', 'Antiseptic', 789, 'liquid', 0, 50, 'https://5.imimg.com/data5/CL/KF/MY-10537017/liquid-handwash-250x250.jpg'),
+(6, 'dettol', 'dettolantiseptic', '2018-10-12', '2018-10-31', '4165', 'Antiseptic', 789, 'liquid', 1, 45, 'https://5.imimg.com/data5/BS/HH/MY-27129570/dettol-aloe-liquid-handwash-250x250.png'),
+(7, 'moov', 'moovointment', '2018-10-02', '2018-10-19', '5145', 'Ointment', 54, 'cream', 0, 20, 'https://5.imimg.com/data5/QP/BQ/GLADMIN-9989194/moov-cream-backpain-specialist-10g-250x250.jpg'),
+(8, 'zandu balm', 'zbalm', '2018-10-23', '2018-10-31', '153', 'Balm', 54, 'cream', 0, 30, 'https://3.imimg.com/data3/VL/RQ/MY-3394706/zandu-balm-25-ml-250x250.jpg'),
+(9, 'eno', 'eno', '2018-09-12', '2018-10-19', '4164', 'Eno is used for gastric diseases.', 16, 'powder', 0, 5, 'https://5.imimg.com/data5/AG/TT/MY-25574894/eno-orange-sachet-5gm-250x250.png'),
+(10, 'relispray', 'Relispray', '2018-10-03', '2018-10-26', '54165', 'Used for pain relief.', 55, 'Spray', 0, 60, 'https://3.imimg.com/data3/CF/NU/MY-2529238/relispray-pain-relief-spray-250x250.jpg');
 
 -- --------------------------------------------------------
 
@@ -168,7 +171,7 @@ ALTER TABLE `user_med_rep`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `p_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `users`
 --
