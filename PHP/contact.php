@@ -77,7 +77,7 @@
 
   .button{
     padding:8px 12px;
-    background:#0A5175;
+    background:#fc4a1a;
     display: block;
     width:120px;
     margin:10px 0 0px 0;
@@ -93,8 +93,8 @@
   }
 
   .button:hover{
-    background:#8BC3A3;
-    color:white;
+    background:white;
+    color:#fc4a1a;
   }
 
 /* Send Button Styles */
@@ -105,7 +105,7 @@
     height: auto;
     padding:15px;
     color:#fff;
-    background:#8BC3A3;
+    background:#fc4a1a;
     border:none;
     border-radius:3px;
     outline: none;
@@ -119,9 +119,9 @@
   }
 
   .form-btn:hover{
-    background:#111;
-    color: white;
-    border:none;
+    background:white;
+    color: #fc4a1a;
+    border:1.5px solid #fc4a1a;
   }
 
   .form-btn:active{
@@ -183,5 +183,9 @@ input {
 			<p align="center">K. J. Somaiya College of Engineering,Vidyanagar, Vidya Vihar East, Ghatkopar East, Mumbai, Maharashtra 400077</p>
 		</div>
 	</div>
+  <?php
+    include('footer.php');
+    ?>
+  </nav>
 </body>
 </html>

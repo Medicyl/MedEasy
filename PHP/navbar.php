@@ -16,7 +16,7 @@
   <nav class="topBar">
     <div class="container">
       <ul class="list-inline pull-left hidden-sm hidden-xs">
-        <li><span style="color: #fff;">Have a question?</span> &nbsp;<a href="../HTML/contact.html"><span style="color: #fff;">Contact Us</span></a></li>
+        <li><span style="color: #fff;">Have a question?</span> &nbsp;<a href="../PHP/contact.php"><span style="color: #fff;">Contact Us</span></a></li>
       </ul>
       <ul class="topBarNav pull-right">
         <li class="dropdown">
@@ -104,55 +104,66 @@
     </div>
     <!-- end col -->
     <div class="col-sm-7 vertical-align text-center">
-      <form>
+      <form action="../PHP/search.php" method="POST">
         <div class="row grid-space-1">
           <div class="col-sm-6">
-            <input type="text" name="keyword" class="form-control input-lg" placeholder="Search">
+            <input type="text" id="search" name="keyword" class="form-control input-lg" placeholder="Search">
          </div>
           <!-- end col -->
           <div class="col-sm-3">
-            <select class="form-control input-lg" name="category">
+
+          <select class="form-control input-lg" name="category">
               <option value="all">All Categories</option>
-              <optgroup label="Mens">
-                <option value="shirts">Shirts</option>
-                <option value="coats-jackets">Coats & Jackets</option>
-                <option value="underwear">Underwear</option>
-                <option value="sunglasses">Sunglasses</option>
-                <option value="socks">Socks</option>
-                <option value="belts">Belts</option>
+              <optgroup label="Health Care">
+                <option value="dettol">Dettol Antiseptic</option>
+                <option value="moov">Moov Ointment</option>
+                <option value="zandu balm">Zandu Balm</option>
+                <option value="eno">Eno</option>
+                <option value="relispray">Relispray</option>
+                <option value="bandaid">Johnson & Johnson Band-Aid</option>
+                <option value="coughq">CoughQ</option>
+                <option value="pudinhara">Dabar Pudinhara</option>
+                <option value="dollo">Dollo</option>
               </optgroup>
-              <optgroup label="Womens">
-                <option value="bresses">Bresses</option>
-                <option value="t-shirts">T-shirts</option>
-                <option value="skirts">Skirts</option>
-                <option value="jeans">Jeans</option>
-                <option value="pullover">Pullover</option>
+              <optgroup label="Herbal And Ayrveda">
+                <option value="dpudinhara">Dabar Pudinhara</option>
+                <option value="amritarishta">Dabar Amritarishta</option>
+                <option value="btablet">Brahmi Tablet</option>
+                <option value="ojasvita">Sri Sri Tattva Ojasvita</option>
+                <option value="ashwagandha">Dabar Ashwagandha Churna</option>
+                <option value="pchyavanprash">Patanjali Chyavanprash</option>
               </optgroup>
-              <option value="kids">Kids</option>
-              <option value="fashion">Fashion</option>
-              <optgroup label="Sportwear">
-                <option value="shoes">Shoes</option>
-                <option value="bags">Bags</option>
-                <option value="pants">Pants</option>
-                <option value="swimwear">Swimwear</option>
-                <option value="bicycles">Bicycles</option>
+              <optgroup label="Food And Nutrition">
+                <option value="glucond">Glucon-D</option>
+                <option value="htea">Herbal Tea</option>
+                <option value="dchyavanprash">Dabar Chyavanprash</option>
+                <option value="ojasvita">Sri Sri Tattva Ojasvita</option>
+                <option value="protinex">Protinex</option>
+                <option value="dhoney">Dabar Honey</option>
               </optgroup>
-              <option value="bags">Bags</option>
-              <option value="shoes">Shoes</option>
-              <option value="hoseholds">HoseHolds</option>
-              <optgroup label="Technology">
-                <option value="tv">TV</option>
-                <option value="camera">Camera</option>
-                <option value="speakers">Speakers</option>
-                <option value="mobile">Mobile</option>
-                <option value="pc">PC</option>
+              <optgroup label="Diabetic Care">
+                <option value="sugarfree">Sugar Free</option>
+                <option value="sugarfightertea">Sugar fighter sweetened green tea</option>
+                <option value="protinexdiabetes">Protinex diabetes powder</option>
+                <option value="healthvitalivcare">Healthvita Liv Care Capsule</option>
+              </optgroup>
+              <optgroup label="Medical Equipments">
+                <option value="morpenbpmonitor">Dr. Morpen BP Monitor</option>
+                <option value="omoronthermometer">Omoron Thermometer</option>
+                <option value="flamingoarm">Flamingo Arm Supporter</option>
+                <option value="flamingoknee">Flamingo Knee Pad</option>
+                <option value="morpengloves">Dr. Morpen Hand Gloves</option>
+                <option value="dispovansyringe">Dispovan Syringe</option>
+                <option value="omoronglucosemonitor">Omoron Glucose Monitor</option>
               </optgroup>
             </select>
+          
           </div>
           <!-- end col -->
           <div class="col-sm-3">
-            <input type="submit" class="btn btn-default btn-block btn-lg" value="Search">
+            <input type="submit" class="btn btn-default btn-block btn-lg" value="Search" name="submit">
          </div>
+
           <!-- end col -->
         </div>
         <!-- end row -->

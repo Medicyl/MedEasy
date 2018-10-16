@@ -22,11 +22,9 @@ ABOUT US
 <br>
 <img src="https://image.ibb.co/nk616F/Layer_1_copy_21.png" width="47" height="11" align="center">
 </h1>
-<article>
+<article class="container">
   <p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-    survived not only five centuries, but also the leap into electronic typesetting, remaining. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-    an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining .
+    MEDEASY is one of most trusted pharmacies, experienced in dispensing quality medicines. At MEDEASY, we help you look after your own health effortlessly as well as take care of loved ones wherever they may reside in Mumbai. You can buy and send medicines from any corner of the city with just a few clicks of the mouse.
   </p>
 </article>
 <section>
@@ -51,5 +49,9 @@ ABOUT US
       <i class="fa fa-dribbble" aria-hidden="true"></i>
     </div>
   </div>
-</div>
+</div><br><br><br><br><br><br><br>
+<?php
+    include('footer.php');
+    ?>
+  </nav>
 </html>

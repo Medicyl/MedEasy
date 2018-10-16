@@ -18,6 +18,11 @@ body{
 	color: #fc4a1a;
 }
 
+input [type=text],[type=email],[type=tel],[type=password]{
+	padding-left: 10px;
+}
+
+
 input
 {	
 	width: 90%;
