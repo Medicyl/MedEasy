@@ -24,7 +24,7 @@ ABOUT US
 </h1>
 <article class="container">
   <p>
-    MEDEASY is one of most trusted pharmacies, experienced in dispensing quality medicines. At MEDEASY, we help you look after your own health effortlessly as well as take care of loved ones wherever they may reside in Mumbai. You can buy and send medicines from any corner of the city with just a few clicks of the mouse.
+    MEDEASY is one of most trusted pharmacies, experienced in dispensing quality medicines. At MEDEASY, we help you look after your own health effortlessly as well as take care of loved ones wherever they may reside in Somaiya. You can buy and send medicines from any corner of the Somaiya Campus with just a few clicks of the mouse.
   </p>
 </article>
 <section>
@@ -50,8 +50,8 @@ ABOUT US
     </div>
   </div>
 </div><br><br><br><br><br><br><br>
-<?php
-    include('footer.php');
-    ?>
+<!-- <?php
+    // include('footer.php');
+    ?> -->
   </nav>
 </html>

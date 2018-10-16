@@ -177,9 +177,17 @@ input {
 			</div>
 		</div>
 		<div class="col-md-12">
-			<h3 align="center">Call Us</h3>
-			<p align="center">+120 4156416515</p>
-			<h3 align="center">Visit Us</h3>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6">
+          <h3 align="center">Call Us</h3>
+          <p align="center"><a href="tel:+120 4156416515">+120 4156416515</a></p>
+        </div>
+        <div class="col-sm-12 col-lg-6">
+          <h3 align="center">Mail Us</h3>
+          <p align="center"><a href="mailto:ms@shah.com?Subject=Give%20Feedback" target="_top">ms@shah.com</a></p>
+        </div>
+			</div>
+      <h3 align="center">Visit Us</h3>
 			<p align="center">K. J. Somaiya College of Engineering,Vidyanagar, Vidya Vihar East, Ghatkopar East, Mumbai, Maharashtra 400077</p>
 		</div>
 	</div>
