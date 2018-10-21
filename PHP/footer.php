@@ -26,7 +26,7 @@
         <div class="col">
             <h1>Products</h1>
             <ul>
-            <a href="search.php"><li>All Products</li></a>
+            <li>All Products</li>
             </ul>
         </div>
         <div class="col">
