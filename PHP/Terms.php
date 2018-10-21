@@ -19,9 +19,17 @@
       font-size: 18px;
     }
     body{
-     background:#617375 !important; 
+     background:#7e7e7f !important; 
     }
-
+  h1 {
+    margin-top: 20px;
+    color: whitesmoke !important;
+    font-family:sans-serif;
+    font-size: 46px;
+    font-weight: 900;
+    text-transform: uppercase;
+    
+  }
   </style>
     <nav>
     <?php
@@ -32,7 +40,7 @@
     <div class="container">
       <div class="row">
         <div class="col m12">
-          <h1 align="center" style="color: #000;">Terms & Condition</h1>
+          <h1 align="center" >Terms & Condition</h1>
               <h3 class="a">1. Creating an Account </h3><hr>
                 <p class="b">
                 1.1 To use certain features of the Website (e.g., ordering Products, posting rating/reviews, receiving Netmeds enewsletters), you must set up an account with Netmeds.com ("Netmeds Account") and provide certain information about yourself as prompted by the Customer Information form, including, your name, gender, email address, account password, mobile phone number and billing/shipping address. All of your registration information is protected by our Privacy Policy.

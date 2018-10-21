@@ -8,6 +8,13 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <style type="text/css">
+  body{
+      background:#7e7e7f !important;
+  }
+  h1,h3{
+    color: #fff !important;
+  }
+
 	 #contact{
     padding:10px 0 10px;
   }
@@ -180,15 +187,15 @@ input {
       <div class="row">
         <div class="col-sm-12 col-lg-6">
           <h3 align="center">Call Us</h3>
-          <p align="center"><a href="tel:+120 4156416515">+120 4156416515</a></p>
+          <p align="center"><a href="tel:+120 4156416515" style="color: #fff;">+120 4156416515</a></p>
         </div>
         <div class="col-sm-12 col-lg-6">
           <h3 align="center">Mail Us</h3>
-          <p align="center"><a href="mailto:ms@shah.com?Subject=Give%20Feedback" target="_top">ms@shah.com</a></p>
+          <p align="center"><a href="mailto:ms@shah.com?Subject=Give%20Feedback" target="_top" style="color: #fff;">help@medeasy.com</a></p>
         </div>
 			</div>
       <h3 align="center">Visit Us</h3>
-			<p align="center">K. J. Somaiya College of Engineering,Vidyanagar, Vidya Vihar East, Ghatkopar East, Mumbai, Maharashtra 400077</p>
+			<p align="center" style="color: #fff;">K. J. Somaiya College of Engineering,Vidyanagar, Vidya Vihar East, Ghatkopar East, Mumbai, Maharashtra 400077</p>
 		</div>
 	</div>
   <?php
