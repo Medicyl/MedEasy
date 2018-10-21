@@ -18,6 +18,7 @@ module.exports=function(app){
         var cvv=req.body.cvv;
         var total=req.body.total;
         var NewOrder=new  Order({
+            itemId:[],
             userId:req.session.user._id,
             address:address,
             city:city,
@@ -35,15 +36,12 @@ module.exports=function(app){
             for(var i=0;i<data[0]["itemIds"].length;i++){
                 if(items[i]["status"]==="ADD"){
                     ParentItem.findOneAndUpdate({_id:items[i]['info']['_id']},{$inc:{quantity:-1}}).then(function(data2){
-                        NewOrder["itemId"]=data2['_id'];
-                        NewOrder.save(function(err){
-                            console.log(err);
-                            console.log("done");
-    
-                        });
-    
+                        NewOrder["itemId"].push(data2['_id']);
+     
+                        // console.log(NewOrder);
                         
                     });
+
 
                     // InventoryItem.findOneAndUpdate({parentItem:items[i]['info']['_id'],status:"AVA"},{$set:{status:'DEL'}}).then(function(data){
                     //     console.log(NewOrder);
@@ -51,11 +49,27 @@ module.exports=function(app){
                     // });
                 }
             }
+            Cart.findOneAndUpdate({userId:req.session.user._id},{$set:{itemIds:[]}}).then(function(data){
+
+            });
+            
+            NewOrder.save(function(err,data){
+                console.log(err);
+                console.log("done");
+                console.log(data['itemId']);
+                Order.findOneAndUpdate({_id:data.id},{$set:{itemId:data['itemId']}}).then(function(result){
+                    console.log(result);
+                });
+                res.render("final",{total:total,address:address,login:"yes",name:req.session.user.name,orderId:data.id});
+                  
+            });
+            
         });
     });
 
-    // app.get("/parent",function(res,req){
-    //     ParentItem.find({_id:"5bc437f1e5a05f06f7c9b226"}).then(function(data){
+    // app.get("/orders",function(res,req){
+        
+    //     Order.find({userId:req.session.user._id}).populate("itemId").then(function(data){
     //         console.log(data);
     //     });
     // });

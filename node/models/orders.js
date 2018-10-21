@@ -6,7 +6,7 @@ var ParentItem=require("./inevntoryItem").ParentItem;
 var orderSchema=new mongoose.Schema({
     orderId:{type:String},
     userId:{type:mongoose.Schema.Types.ObjectId,ref:"MedEasyUsers"},
-    itemId:{type:mongoose.Schema.Types.ObjectId,ref:"ParentItem"},
+    itemId:[{type:mongoose.Schema.Types.ObjectId,ref:"ParentItem"}],
     dop:{type:Date},
     status:{type:String},
     address:{type:String},

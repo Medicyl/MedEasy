@@ -10,14 +10,16 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     </head>
+    
 
     <body>
 
 
         <div class="container">
 
-          <h1>Shopping Cart</h1>
+          <h1 style="color:white;"><b>Shopping Cart</b></h1>
 
           <div class="shopping-cart">
 
@@ -49,7 +51,7 @@
                             <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
                           </div>
                           <div class="product-details">
-                            <div class="product-title"><%= items[i]["info"]["name"] %></div>
+                            <div class="product-title"><h3><%= items[i]["info"]["name"] %></h3></div>
                             <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
                           </div>
                           <div class="row col s12 l1">
@@ -68,10 +70,9 @@
                                   </div>
                               </div>
                           </div>
-                        <div class="product-removal">
-                          <button class="btn waves-effect waves-light remove-product" >Remove
-                            <i class="material-icons right">close</i>
-                          </button>
+                        <div class="">
+
+                              <a class="remove" href="http://localhost:3000/cart/remove/<%=items[i]['info']['_id']%>">Remove</a>
                         </div>
                       </div>
                   </div>

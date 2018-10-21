@@ -10,7 +10,7 @@ module.exports=function(app){
     app.get("/shop",function(req,res){
         
         ParentItem.find().then(function(data){
-            res.render("shop",{items:data});
+            res.render("shop",{items:data,login:"yes",name:req.session.user.name});
             
         });
     });
@@ -41,15 +41,23 @@ module.exports=function(app){
         var reuslt=Cart.find({userId:req.session.user._id}).populate({path:"itemIds.info"}).then(function(data){
             // console.log(data[0]['itemIds'][0]['status']);
             // console.log(data);
-            // var cartItems=data[0]["itemIds"];
+            var cartItems=data[0]["itemIds"];
             // var status=data[0]["itemIds"][0]["status"];
             // console.log(status);
-            // console.log(cartItems);
+            console.log(cartItems);
 
             res.render("cart",{items:data[0]["itemIds"]});
 
         });
 
+    });
+    app.get("/cart/remove/:item",function(req,res){
+        Cart.findOneAndUpdate({userId:req.session.user._id},{$pull:{itemIds:{info:req.params.item}}}).then(function(data){
+            console.log("removed");
+            console.log(data);
+            res.redirect("/cart");
+
+        })
     });
     
     app.get("/checkout",function(req,res){
