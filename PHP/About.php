@@ -24,7 +24,7 @@ ABOUT US
 </h1>
 <article class="container">
   <p>
-    MEDEASY is one of most trusted pharmacies, experienced in dispensing quality medicines. At MEDEASY, we help you look after your own health effortlessly as well as take care of loved ones wherever they may reside in Mumbai. You can buy and send medicines from any corner of the city with just a few clicks of the mouse.
+    MEDEASY is one of most trusted pharmacies, experienced in dispensing quality medicines. At MEDEASY, we help you look after your own health effortlessly as well as take care of loved ones wherever they may reside in Somaiya. You can buy and send medicines from any corner of the Somaiya Campus with just a few clicks of the mouse.
   </p>
 </article>
 <section>
@@ -50,8 +50,53 @@ ABOUT US
     </div>
   </div>
 </div><br><br><br><br><br><br><br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-sm-3">
+
+      <div class="card" style="width:400px;background-color: #000;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xfbjH2CoJY5aUzJulQXB5r3grUQSGCWbCHCCDCHkIZml96EA" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #fff;">Priyam Shah</h4>
+          <p class="card-text">Developer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 col-sm-2"></div>
+
+      <div class="col-md-3 col-sm-3">
+        <div class="card" style="width:400px;background-color: #000;">
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xfbjH2CoJY5aUzJulQXB5r3grUQSGCWbCHCCDCHkIZml96EA" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title" style="color: #fff;">Devansh Solanki</h4>
+            <p class="card-text">Developer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-1 col-sm-2"></div>
+    <div class="col-md-3 col-sm-3">
+      <div class="card" style="width:400px;background-color: #000;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5xfbjH2CoJY5aUzJulQXB5r3grUQSGCWbCHCCDCHkIZml96EA" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title" style="color: #fff;">Mihir Shah</h4>
+          <p class="card-text">Developer</p>
+          <a href="#" class="btn btn-primary">See Profile</a>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+   
+  </div>
+</div>
+
 <?php
-    include('footer.php');
+include('footer.php');
     ?>
   </nav>
 </html>

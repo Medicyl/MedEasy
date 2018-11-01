@@ -4,13 +4,13 @@
 }
 
 body {
- background:#617375 !important; 
+ background:#7e7e7f !important;
  text-align: center;
 }
 
 h1 {
   margin-top: 20px;
-  color: white;
+  color: white !important;
   font-family:sans-serif;
   font-size: 46px;
   font-weight: 900;
@@ -34,7 +34,7 @@ p {
   border: 1px dashed white;
   margin: 0 0 0 55px;
   /*   padding: 1px; resize squares */
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.5);
   display: inline-block;
   transform: rotateZ(44deg);
 }

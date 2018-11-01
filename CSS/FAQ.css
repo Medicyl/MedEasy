@@ -1,6 +1,7 @@
 body{
   font-family:sans-serif;
-   background:#617375 !important;
+  background:#7e7e7f !important;
+
 }
 main{
   display:block;
@@ -16,7 +17,7 @@ main{
 }
 h1 {
   margin-top: 20px;
-  color: whitesmoke;
+  color: whitesmoke !important;
   font-family:sans-serif;
   font-size: 46px;
   font-weight: 900;

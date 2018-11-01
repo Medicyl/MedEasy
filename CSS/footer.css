@@ -17,7 +17,7 @@ a{
     bottom: 0;
     width: 100%;
     position: relative;
-    background-color: #070617;
+    background-color: #00a3a3;
   }
   .footer .col {
     width: 190px;
@@ -35,7 +35,7 @@ a{
     font-size: 12px;
     line-height: 17px;
     padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
+    color: rgba(0,0,0);
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.250em;
@@ -46,7 +46,7 @@ a{
     padding: 0;
   }
   .footer .col ul li {
-    color: #999999;
+    color: #fff;
     font-size: 14px;
     font-family: inherit;
     font-weight: bold;

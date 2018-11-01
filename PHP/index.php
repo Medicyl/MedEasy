@@ -32,36 +32,33 @@
     </div>
     <!-- Top Category Items -->
 <div class="container-fluid">
-  <h1 class="text-center mb-3">Trending Items</h1>
+  <h1 class="text-center mb-3" style="color:#fc4a1a; border: 1px solid; background:rgba(255,255,255,0.7)">Trending Items</h1>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner row w-100 mx-auto">
       <div class="carousel-item col-md-4 active">
         <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="https://cdn.medisave.co.uk/media/catalog/product/cache/1/image/600x/9df78eab33525d08d6e5fb8d27136e95/o/m/om246_ba.jpg" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">Card 1</h4>
+            <h4 class="card-title">Omron Thermometer</h4>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
       <div class="carousel-item col-md-4">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/418cf4/fff" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Card 2</h4>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div class="card">
+          <a href="product.php"><img class="card-img-top img-fluid" src="http://www.swadeshaj.com/1561-thickbox_default/dabur-chyawanprash-orange-flavour.jpg" alt="Card image cap"></a>
+            <div class="card-body">
+              <h4 class="card-title">Dabar Chyawanprash</h4>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
           </div>
-        </div>
       </div>
       <div class="carousel-item col-md-4">
         <div class="card">
-          <img class="card-img-top img-fluid" src="http://placehold.it/800x600/3ed846/fff" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="https://www.waangoo.com/content/images/thumbs/0020925_glucon-d-powder-energy-drink-orange_600.jpeg" alt="Card image cap">
           <div class="card-body">
-            <h4 class="card-title">Card 3</h4>
+            <h4 class="card-title">Glucon-D Orange</h4>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
