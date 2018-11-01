@@ -4,6 +4,8 @@ var InventoryItem=require("../models/inevntoryItem").InventoryItem;
 var ParentItem=require("../models/inevntoryItem").ParentItem;
 var Order=require("../models/orders").Order;
 var Cart=require("../models/orders").Cart;
+const sendmail=require('sendmail')();
+
 
 module.exports=function(app){
     app.post("/checkout",function(req,res){
@@ -60,6 +62,16 @@ module.exports=function(app){
                 Order.findOneAndUpdate({_id:data.id},{$set:{itemId:data['itemId']}}).then(function(result){
                     console.log(result);
                 });
+                // sendmail({
+                //     form:'devansh.solanki@somaiya.edu',
+                //     to:req.session.user.email,
+                //     subject:'order confirmation',
+                //     html:'your order has been confirmed'
+
+                // },function(err,reply){
+                //     console.log(reply);
+                // });
+
                 res.render("final",{total:total,address:address,login:"yes",name:req.session.user.name,orderId:data.id});
                   
             });
